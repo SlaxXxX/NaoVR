@@ -1,0 +1,41 @@
+## General
+[Markdown Cheat Sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+
+### Unreal Engine
+UE-Version: 4.22.3
+
+[Documentation](https://docs.unrealengine.com/en-US/index.html)
+
+[CPP-API](https://www.unrealengine.com/en-US/bing-search?&filter=C%2B%2B%20API)
+
+### Nao
+[Documentation](http://doc.aldebaran.com/2-1/home_nao.html)
+
+### ROS
+[Documentation](http://wiki.ros.org/action/fullsearch/Documentation)
+
+
+## Time Management
+Total: 150 Hrs
+
+Technically left after estimation: 18 hr
+
+#### Topics:
+
+Topic | Time Estimation | Assignee | Comment
+--- | --- | --- | ---
+Setup / Learn to use ROS, UE, Nao, other | 30 hr | |
+Test Nao Camera, Try to stream to PC | 10 hr max | | Would not waste more time than nessecary on this, external hardware is better anyways
+Find and setup suitable video hardware | 10 hr | | If Nao’s camera does not meet expectations
+Get Vive Hardware to track in virtual world | 2 hr | | Should be easy with unreal engine
+Calculate user pose from tracked Vive | 30 hr | | Still looking for a keyword here i picked up a while ago (something with skeleton)
+Get Nao to move | 10 hr | | Try to send move commands live to the nao wirelessly
+Move Nao’s head to Vive tracked position | 20 hr | | Head seems like a good start. Can’t break anything, most vital part of system as camera is essential for good immersion
+Move Nao’s arms to Vive tracked position | 20 hr | |
+
+## Potential Topics:
+- Motionsickness. Causes and solutions
+- How to keep Nao in Balance. (important for feet tracked walking)
+
+## Notes and thoughts
+
