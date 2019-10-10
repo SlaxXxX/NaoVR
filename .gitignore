@@ -3,13 +3,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/master/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Mm]emoryCaptures/
+Project/NaoVR/Library/
+Project/NaoVR/Temp/
+Project/NaoVR/Obj/
+Project/NaoVR/Build/
+Project/NaoVR/Builds/
+Project/NaoVR/Logs/
+Project/NaoVR/MemoryCaptures/
 
 # Never ignore Asset meta data
 !/[Aa]ssets/**/*.meta
