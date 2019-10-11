@@ -14,6 +14,12 @@ Version: 2019.3.0b6
 ### ROS
 [Documentation](http://wiki.ros.org/action/fullsearch/Documentation)
 
+### ROS#
+
+[GitHub](https://github.com/siemens/ros-sharp)
+
+### Interesting Links
+[youtube: "Teleoperated Nao-robot through VR-interface"](https://www.youtube.com/watch?v=PUn5A76dlJs)
 
 ## Time Management
 Total: 150 Hrs
