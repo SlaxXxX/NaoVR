@@ -13,6 +13,7 @@ Version: 2019.3.0b6
 
 ### ROS
 [Documentation](http://wiki.ros.org/action/fullsearch/Documentation)
+[ROS Naoqi](https://github.com/ros-naoqi)
 
 ### ROS#
 
