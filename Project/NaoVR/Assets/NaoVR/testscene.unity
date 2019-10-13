@@ -121,129 +121,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1001 &342266110
-PrefabInstance:
+--- !u!1 &109974380
+GameObject:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 146900, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_Name
-      value: '[CameraRig]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_RootOrder
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 1498708652}
-    - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
-      propertyPath: m_Mesh
-      value: 
-      objectReference: {fileID: 561793548}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
---- !u!1001 &439614045
-PrefabInstance:
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 109974381}
+  - component: {fileID: 109974382}
+  m_Layer: 0
+  m_Name: base_link
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &109974381
+Transform:
   m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 132594, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_Name
-      value: '[SteamVR]'
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
---- !u!43 &561793548
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109974380}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1947175959}
+  - {fileID: 1850695158}
+  - {fileID: 622647907}
+  m_Father: {fileID: 1162849691}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &109974382
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 109974380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba5fd74d37a6cf4284698624eb8f6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBaseLink: 1
+--- !u!43 &319011502
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -406,13 +331,1912 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1001 &342266110
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 146900, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_Name
+      value: '[CameraRig]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 560115398}
+    - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 319011502}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+--- !u!1001 &439614045
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 132594, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_Name
+      value: '[SteamVR]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 458990, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4f35fa249b5008c44ac2998be6f82d4d, type: 3}
+--- !u!21 &560115398
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+--- !u!1 &622647906
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 622647907}
+  - component: {fileID: 622647908}
+  m_Layer: 0
+  m_Name: link
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &622647907
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622647906}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1474637127}
+  - {fileID: 781054904}
+  m_Father: {fileID: 109974381}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &622647908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 622647906}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fba5fd74d37a6cf4284698624eb8f6aa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  IsBaseLink: 0
+--- !u!1 &624640909
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 624640910}
+  - component: {fileID: 624640994}
+  - component: {fileID: 624640993}
+  - component: {fileID: 624640992}
+  - component: {fileID: 624640991}
+  - component: {fileID: 624640990}
+  - component: {fileID: 624640989}
+  - component: {fileID: 624640988}
+  - component: {fileID: 624640987}
+  - component: {fileID: 624640986}
+  - component: {fileID: 624640985}
+  - component: {fileID: 624640984}
+  - component: {fileID: 624640983}
+  - component: {fileID: 624640982}
+  - component: {fileID: 624640981}
+  - component: {fileID: 624640980}
+  - component: {fileID: 624640979}
+  - component: {fileID: 624640978}
+  - component: {fileID: 624640977}
+  - component: {fileID: 624640976}
+  - component: {fileID: 624640975}
+  - component: {fileID: 624640974}
+  - component: {fileID: 624640973}
+  - component: {fileID: 624640972}
+  - component: {fileID: 624640971}
+  - component: {fileID: 624640970}
+  - component: {fileID: 624640969}
+  - component: {fileID: 624640968}
+  - component: {fileID: 624640967}
+  - component: {fileID: 624640966}
+  - component: {fileID: 624640965}
+  - component: {fileID: 624640964}
+  - component: {fileID: 624640963}
+  - component: {fileID: 624640962}
+  - component: {fileID: 624640961}
+  - component: {fileID: 624640960}
+  - component: {fileID: 624640959}
+  - component: {fileID: 624640958}
+  - component: {fileID: 624640957}
+  - component: {fileID: 624640956}
+  - component: {fileID: 624640955}
+  - component: {fileID: 624640954}
+  - component: {fileID: 624640953}
+  - component: {fileID: 624640952}
+  - component: {fileID: 624640951}
+  - component: {fileID: 624640950}
+  - component: {fileID: 624640949}
+  - component: {fileID: 624640948}
+  - component: {fileID: 624640947}
+  - component: {fileID: 624640946}
+  - component: {fileID: 624640945}
+  - component: {fileID: 624640944}
+  - component: {fileID: 624640943}
+  - component: {fileID: 624640942}
+  - component: {fileID: 624640941}
+  - component: {fileID: 624640940}
+  - component: {fileID: 624640939}
+  - component: {fileID: 624640938}
+  - component: {fileID: 624640937}
+  - component: {fileID: 624640936}
+  - component: {fileID: 624640935}
+  - component: {fileID: 624640934}
+  - component: {fileID: 624640933}
+  - component: {fileID: 624640932}
+  - component: {fileID: 624640931}
+  - component: {fileID: 624640930}
+  - component: {fileID: 624640929}
+  - component: {fileID: 624640928}
+  - component: {fileID: 624640927}
+  - component: {fileID: 624640926}
+  - component: {fileID: 624640925}
+  - component: {fileID: 624640924}
+  - component: {fileID: 624640923}
+  - component: {fileID: 624640922}
+  - component: {fileID: 624640921}
+  - component: {fileID: 624640920}
+  - component: {fileID: 624640919}
+  - component: {fileID: 624640918}
+  - component: {fileID: 624640917}
+  - component: {fileID: 624640916}
+  - component: {fileID: 624640915}
+  - component: {fileID: 624640914}
+  - component: {fileID: 624640913}
+  - component: {fileID: 624640912}
+  - component: {fileID: 624640911}
+  m_Layer: 0
+  m_Name: Plugins
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &624640910
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1162849691}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &624640911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RAnkleRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RAnkleRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RAnkleRoll_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>201.3</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640912
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RAnklePitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RAnklePitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RAnklePitch_Motor\">\r\n    <!-- Dummy Values
+    -->\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>130.85</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640913
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RKneePitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RKneePitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RKneePitch_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>130.85</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640914
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RHipPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RHipPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RHipPitch_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>130.85</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640915
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RHipRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RHipRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RHipRoll_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>201.3</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640916
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RHipYawPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RHipYawPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RHipYawPitch_Motor\">\r\n    <!-- Dummy Values
+    -->\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>201.3</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640917
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LAnkleRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LAnkleRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LAnkleRoll_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>201.3</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640918
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LAnklePitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LAnklePitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LAnklePitch_Motor\">\r\n    <!-- Dummy Values
+    -->\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>130.85</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640919
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LKneePitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LKneePitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LKneePitch_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>130.85</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640920
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LHipPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LHipPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LHipPitch_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>130.85</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640921
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LHipRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LHipRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LHipRoll_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>201.3</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640922
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LHipYawPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LHipYawPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LHipYawPitch_Motor\">\r\n    <!-- Dummy Values
+    -->\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>201.3</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640923
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RHand_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RHand\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RHand_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>36.24</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RWristYaw_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RWristYaw\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RWristYaw_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>50.61</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640925
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RElbowRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RElbowRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RElbowRoll_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>173.22</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RElbowYaw_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RElbowYaw\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RElbowYaw_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>150.27</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640927
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RShoulderRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RShoulderRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RShoulderRoll_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>173.22</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"RShoulderPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"RShoulderPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"RShoulderPitch_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>150.27</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640929
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LHand_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LHand\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LHand_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>36.24</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LWristYaw_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LWristYaw\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LWristYaw_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>50.61</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640931
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LElbowRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LElbowRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LElbowRoll_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>173.22</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640932
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LElbowYaw_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LElbowYaw\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LElbowYaw_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>150.27</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640933
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LShoulderRoll_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LShoulderRoll\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LShoulderRoll_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>173.22</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640934
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"LShoulderPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"LShoulderPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"LShoulderPitch_Motor\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n   
+    <mechanicalReduction>150.27</mechanicalReduction>\r\n  </actuator>\r\n</transmission>"
+--- !u!114 &624640935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"HeadPitch_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"HeadPitch\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"HeadPitch_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>173.22</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<transmission name=\"HeadYaw_Transmission\">\r\n  <type>transmission_interface/SimpleTransmission</type>\r\n 
+    <joint name=\"HeadYaw\">\r\n    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n 
+    </joint>\r\n  <actuator name=\"HeadYaw_Motor\">\r\n    <!-- Dummy Values -->\r\n   
+    <hardwareInterface>PositionJointInterface</hardwareInterface>\r\n    <mechanicalReduction>150.27</mechanicalReduction>\r\n 
+    </actuator>\r\n</transmission>"
+--- !u!114 &624640937
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RSonar_frame\">\r\n  <sensor name=\"RSonar\" type=\"ray\">\r\n   
+    <pose>0 0 0 0 0 0</pose>\r\n    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n   
+    <ray>\r\n      <scan>\r\n        <horizontal>\r\n          <samples>5</samples>\r\n         
+    <resolution>1</resolution>\r\n          <min_angle>-0.2617993877991494</min_angle>\r\n         
+    <max_angle>0.2617993877991494</max_angle>\r\n        </horizontal>\r\n       
+    <vertical>\r\n          <samples>5</samples>\r\n          <resolution>1</resolution>\r\n         
+    <min_angle>-0.13</min_angle>\r\n          <max_angle>0.13</max_angle>\r\n       
+    </vertical>\r\n      </scan>\r\n      <range>\r\n        <min>0.025</min>\r\n       
+    <max>2.55</max>\r\n        <resolution>1</resolution>\r\n      </range>\r\n   
+    </ray>\r\n    <plugin filename=\"libgazebo_ros_range.so\" name=\"gazebo_ros_range\">\r\n     
+    <robotNamespace>nao_robot</robotNamespace>\r\n      <gaussianNoise>0.05</gaussianNoise>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <updateRate>20</updateRate>\r\n      <topicName>sonar_right</topicName>\r\n     
+    <frameName>RSonar_frame</frameName>\r\n      <minRange>0.025</minRange>\r\n     
+    <maxRange>2.55</maxRange>\r\n      <fov>0.5235987755982988</fov>\r\n      <radiation>ultrasound</radiation>\r\n   
+    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LSonar_frame\">\r\n  <sensor name=\"LSonar\" type=\"ray\">\r\n   
+    <pose>0 0 0 0 0 0</pose>\r\n    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n   
+    <ray>\r\n      <scan>\r\n        <horizontal>\r\n          <samples>5</samples>\r\n         
+    <resolution>1</resolution>\r\n          <min_angle>-0.2617993877991494</min_angle>\r\n         
+    <max_angle>0.2617993877991494</max_angle>\r\n          <!--\r\n          <min_angle>-0.10</min_angle>\r\n         
+    <max_angle>0.10</max_angle> \r\n-->\r\n        </horizontal>\r\n        <vertical>\r\n         
+    <samples>5</samples>\r\n          <resolution>1</resolution>\r\n          <min_angle>-0.13</min_angle>\r\n         
+    <max_angle>0.13</max_angle>\r\n          <!--\r\n          <min_angle>-0.2617993877991494</min_angle>\r\n         
+    <max_angle>0.2617993877991494</max_angle> \r\n-->\r\n        </vertical>\r\n     
+    </scan>\r\n      <range>\r\n        <min>0.025</min>\r\n        <max>2.55</max>\r\n       
+    <resolution>1</resolution>\r\n      </range>\r\n    </ray>\r\n    <plugin filename=\"libgazebo_ros_range.so\"
+    name=\"gazebo_ros_range\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <gaussianNoise>0.05</gaussianNoise>\r\n      <alwaysOn>true</alwaysOn>\r\n     
+    <updateRate>20</updateRate>\r\n      <topicName>sonar_left</topicName>\r\n     
+    <frameName>LSonar_frame</frameName>\r\n      <minRange>0.025</minRange>\r\n     
+    <maxRange>2.55</maxRange>\r\n      <fov>0.5235987755982988</fov>\r\n      <!--     
+    <fov>0.1</fov> -->\r\n      <radiation>ultrasound</radiation>\r\n    </plugin>\r\n 
+    </sensor>\r\n</gazebo>"
+--- !u!114 &624640939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFsrRR_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"LFsrRR\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>LFsrRR_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_ros_bumper\">\r\n     
+    <robotNamespace>nao_robot</robotNamespace>\r\n      <alwaysOn>true</alwaysOn>\r\n     
+    <bumperTopicName>FSR/LFoot/RearRight</bumperTopicName>\r\n      <frameName>LFsrRR_frame</frameName>\r\n   
+    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFsrRL_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"LFsrRL\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>LFsrRL_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_ros_bumper\">\r\n     
+    <robotNamespace>nao_robot</robotNamespace>\r\n      <alwaysOn>true</alwaysOn>\r\n     
+    <bumperTopicName>FSR/LFoot/RearLeft</bumperTopicName>\r\n      <frameName>LFsrRL_frame</frameName>\r\n   
+    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFsrFR_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"LFsrFR\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>LFsrFR_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_ros_bumper\">\r\n     
+    <robotNamespace>nao_robot</robotNamespace>\r\n      <alwaysOn>true</alwaysOn>\r\n     
+    <bumperTopicName>FSR/LFoot/FrontRight</bumperTopicName>\r\n      <frameName>LFsrFR_frame</frameName>\r\n   
+    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFsrFL_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"LFsrFL\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>LFsrFL_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_LFsrFL\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <bumperTopicName>FSR/LFoot/FrontLeft</bumperTopicName>\r\n     
+    <frameName>RFsrFL_frame</frameName>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640943
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFsrRR_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"RFsrRR\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>RFsrRR_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_RFsrRR\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <bumperTopicName>FSR/RFoot/RearRight</bumperTopicName>\r\n     
+    <frameName>RFsrRR_frame</frameName>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFsrRL_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"RFsrRL\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>RFsrRL_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_RFsrRL\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <bumperTopicName>FSR/RFoot/RearLeft</bumperTopicName>\r\n     
+    <frameName>RFsrRL_frame</frameName>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640945
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFsrFR_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"RFsrFR\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>RFsrFR_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_RFsrFR\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <bumperTopicName>FSR/RFoot/FrontRight</bumperTopicName>\r\n     
+    <frameName>RFsrFR_frame</frameName>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640946
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFsrFL_frame\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n 
+    <sensor name=\"RFsrFL\" type=\"contact\">\r\n    <always_on>1</always_on>\r\n   
+    <update_rate>20</update_rate>\r\n    <visualize>false</visualize>\r\n    <contact>\r\n     
+    <collision>RFsrFL_frame_collision</collision>\r\n    </contact>\r\n    <plugin
+    filename=\"libgazebo_ros_bumper.so\" name=\"gazebo_nao_RFsrFL\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <bumperTopicName>FSR/RFoot/FrontLeft</bumperTopicName>\r\n     
+    <frameName>RFsrFL_frame</frameName>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640947
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"CameraBottom_frame\">\r\n  <sensor name=\"CameraBottom\"
+    type=\"camera\">\r\n    <update_rate>5.0</update_rate>\r\n    <camera name=\"camera_bottom\">\r\n     
+    <horizontal_fov>1.06290551</horizontal_fov>\r\n      <image>\r\n        <width>640</width>\r\n       
+    <height>480</height>\r\n        <format>R8G8B8</format>\r\n      </image>\r\n     
+    <clip>\r\n        <near>0.05</near>\r\n        <far>500</far>\r\n      </clip>\r\n     
+    <noise>\r\n        <type>gaussian</type>\r\n        <mean>0.0</mean>\r\n       
+    <stddev>0.007</stddev>\r\n      </noise>\r\n    </camera>\r\n    <plugin filename=\"libgazebo_ros_camera.so\"
+    name=\"camera_controller\">\r\n      <robotNamespace>/nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <updateRate>5.0</updateRate>\r\n      <cameraName>camera_bottom</cameraName>\r\n     
+    <imageTopicName>image_raw</imageTopicName>\r\n      <cameraInfoTopicName>camera_info</cameraInfoTopicName>\r\n     
+    <frameName>CameraBottom_optical_frame</frameName>\r\n      <hackBaseline>0.07</hackBaseline>\r\n     
+    <distortionK1>-0.0648764</distortionK1>\r\n      <distortionK2>0.06125202</distortionK2>\r\n     
+    <distortionK3>0.00382815</distortionK3>\r\n      <distortionT1>-0.00551104</distortionT1>\r\n     
+    <distortionT2>0.0</distortionT2>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640948
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"CameraTop_frame\">\r\n  <sensor name=\"CameraTop\"
+    type=\"camera\">\r\n    <update_rate>5.0</update_rate>\r\n    <camera name=\"camera_top\">\r\n     
+    <horizontal_fov>1.06290551</horizontal_fov>\r\n      <image>\r\n        <width>640</width>\r\n       
+    <height>480</height>\r\n        <format>R8G8B8</format>\r\n      </image>\r\n     
+    <clip>\r\n        <near>0.3</near>\r\n        <far>500</far>\r\n      </clip>\r\n     
+    <noise>\r\n        <type>gaussian</type>\r\n        <mean>0.0</mean>\r\n       
+    <stddev>0.007</stddev>\r\n      </noise>\r\n    </camera>\r\n    <plugin filename=\"libgazebo_ros_camera.so\"
+    name=\"camera_controller\">\r\n      <robotNamespace>nao_robot</robotNamespace>\r\n     
+    <alwaysOn>true</alwaysOn>\r\n      <updateRate>5.0</updateRate>\r\n      <cameraName>camera/top</cameraName>\r\n     
+    <imageTopicName>image_raw</imageTopicName>\r\n      <cameraInfoTopicName>camera_info</cameraInfoTopicName>\r\n     
+    <frameName>CameraTop_optical_frame</frameName>\r\n      <hackBaseline>0.07</hackBaseline>\r\n     
+    <distortionK1>-0.0545211</distortionK1>\r\n      <distortionK2>0.06919734</distortionK2>\r\n     
+    <distortionK3>-0.0241095</distortionK3>\r\n      <distortionT1>-0.0112245</distortionT1>\r\n     
+    <distortionT2>0.0</distortionT2>\r\n    </plugin>\r\n  </sensor>\r\n</gazebo>"
+--- !u!114 &624640949
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RThumb2_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640950
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RThumb1_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFinger23_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFinger22_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640953
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFinger21_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640954
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFinger13_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFinger12_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640956
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RFinger11_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"r_ankle\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n</gazebo>"
+--- !u!114 &624640958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RAnklePitch\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RTibia\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RThigh\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640961
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RHip\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RPelvis\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640963
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"l_ankle\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n 
+    <fdir1>1 0 0</fdir1>\r\n  <maxVel>0.1</maxVel>\r\n  <minDepth>0.003</minDepth>\r\n</gazebo>"
+--- !u!114 &624640964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LAnklePitch\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LTibia\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640966
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LThigh\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640967
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LHip\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LPelvis\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640969
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LThumb2_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LThumb1_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640971
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFinger23_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640972
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFinger22_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640973
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFinger21_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFinger13_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640975
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFinger12_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640976
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LFinger11_link\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640977
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"r_gripper\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640978
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"r_wrist\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640979
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RForeArm\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640980
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RElbow\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RBicep\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640982
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"RShoulder\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640983
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"l_gripper\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>true</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640984
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"l_wrist\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LForeArm\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640986
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LElbow\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640987
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LBicep\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640988
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"LShoulder\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"gaze\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"Head\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640991
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"Neck\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640992
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo reference=\"torso\">\r\n  <mu1>0.5</mu1>\r\n  <mu2>0.5</mu2>\r\n 
+    <selfCollide>false</selfCollide>\r\n  <turnGravityOff>false</turnGravityOff>\r\n</gazebo>"
+--- !u!114 &624640993
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76add797bdb1d8c4b8276633f6e67167, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PluginText: "<gazebo>\r\n  <plugin filename=\"libgazebo_ros_control.so\" name=\"gazebo_ros_control\">\r\n   
+    <robotNamespace>/nao_dcm</robotNamespace>\r\n    <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>\r\n 
+    </plugin>\r\n  <!--        <plugin filename=\"libgazebo_ros_imu.so\" name=\"gazebo_ros_imu_controller\">\r\n           
+    <robotNamespace>/nao_dcm</robotNamespace>\r\n            <topicName>imu_data</topicName>\r\n           
+    <bodyName>imu</bodyName>\r\n            <frameId>ImuAccelerometer_frame</frameId>\r\n           
+    <gaussianNoise>2.89e-08</gaussianNoise>\r\n            <accelGaussianNoise>2.89e-08
+    2.89e-08 2.89e-08</accelGaussianNoise>\r\n            <rateGaussianNoise>2.89e-08
+    2.89e-08 2.89e-08</rateGaussianNoise>\r\n            <headingGaussianNoise>2.89e-08
+    2.89e-08 2.89e-08</headingGaussianNoise>\r\n            <xyzOffsets>0 0 0</xyzOffsets>\r\n           
+    <rpyOffsets>0 0 0</rpyOffsets>\r\n            <updateRate>30.0</updateRate>\r\n           
+    <alwaysOn>true</alwaysOn>\r\n        </plugin>\r\n-->\r\n  <!--        <plugin
+    name=\"gazebo_ros_imu_controller\" filename=\"${imu_plugin}\">\r\n           
+    <robotNamespace>/nao_dcm</robotNamespace>\r\n            <topicName>imu_data</topicName>\r\n           
+    <bodyName>imu</bodyName>\r\n            <frameId>imu</frameId>\r\n           
+    <gaussianNoise>2.89e-08</gaussianNoise>\r\n            <accelGaussianNoise>2.89e-08
+    2.89e-08 2.89e-08</accelGaussianNoise>\r\n            <rateGaussianNoise>2.89e-08
+    2.89e-08 2.89e-08</rateGaussianNoise>\r\n            <headingGaussianNoise>2.89e-08
+    2.89e-08 2.89e-08</headingGaussianNoise>\r\n            <xyzOffsets>0 0 0</xyzOffsets>\r\n           
+    <rpyOffsets>0 0 0</rpyOffsets>\r\n            <updateRate>30.0</updateRate>\r\n           
+    <alwaysOn>true</alwaysOn>\r\n        </plugin>\r\n-->\r\n  <!-- Mimic joints
+    through plugin develop by costashatz based on implementation by Goncalo Cabrita
+    -->\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\" name=\"mimic_hipyawpitch\">\r\n   
+    <joint>LHipYawPitch</joint>\r\n    <mimicJoint>RHipYawPitch</mimicJoint>\r\n   
+    <multiplier>1.0</multiplier>\r\n    <offset>0.0</offset>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\" name=\"mimic_LFinger11\">\r\n   
+    <joint>LHand</joint>\r\n    <mimicJoint>LFinger11</mimicJoint>\r\n    <multiplier>-0.785398163398</multiplier>\r\n   
+    <offset>0.785398163398</offset>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_LFinger12\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LFinger12</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_LFinger13\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LFinger13</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_LFinger21\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LFinger21</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_LFinger22\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LFinger22</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_LFinger23\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LFinger23</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_RFinger11\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RFinger11</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_RFinger12\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RFinger12</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_RFinger13\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RFinger13</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_RFinger21\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RFinger21</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_RFinger22\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RFinger22</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"mimic_RFinger23\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RFinger23</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"LThumb1\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LThumb1</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"LThumb2\">\r\n    <joint>LHand</joint>\r\n    <mimicJoint>LThumb2</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"RThumb1\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RThumb1</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_mimic_joint_plugin.so\"
+    name=\"RThumb2\">\r\n    <joint>RHand</joint>\r\n    <mimicJoint>RThumb2</mimicJoint>\r\n   
+    <multiplier>-0.785398163398</multiplier>\r\n    <offset>0.785398163398</offset>\r\n 
+    </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"LFinger11_link\">\r\n    <link>LFinger11_link</link>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"LFinger12_link\">\r\n   
+    <link>LFinger12_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"LFinger13_link\">\r\n    <link>LFinger13_link</link>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"LFinger21_link\">\r\n   
+    <link>LFinger21_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"LFinger22_link\">\r\n    <link>LFinger22_link</link>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"LFinger23_link\">\r\n   
+    <link>LFinger23_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"LThumb1_link\">\r\n    <link>LThumb1_link</link>\r\n  </plugin>\r\n  <plugin
+    filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"LThumb2_link\">\r\n   
+    <link>LThumb2_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"l_gripper\">\r\n    <link>l_gripper</link>\r\n  </plugin>\r\n  <plugin
+    filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"RFinger11_link\">\r\n   
+    <link>RFinger11_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"RFinger12_link\">\r\n    <link>RFinger12_link</link>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"RFinger13_link\">\r\n   
+    <link>RFinger13_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"RFinger21_link\">\r\n    <link>RFinger21_link</link>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"RFinger22_link\">\r\n   
+    <link>RFinger22_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"RFinger23_link\">\r\n    <link>RFinger23_link</link>\r\n  </plugin>\r\n 
+    <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"RThumb1_link\">\r\n   
+    <link>RThumb1_link</link>\r\n  </plugin>\r\n  <plugin filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\"
+    name=\"RThumb2_link\">\r\n    <link>RThumb2_link</link>\r\n  </plugin>\r\n  <plugin
+    filename=\"libroboticsgroup_gazebo_disable_link_plugin.so\" name=\"r_gripper\">\r\n   
+    <link>r_gripper</link>\r\n  </plugin>\r\n</gazebo>"
+--- !u!114 &624640994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 624640909}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae53a797b5479c43b9a3aeac7e35e5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &660439612
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 660439613}
+  - component: {fileID: 660439614}
+  m_Layer: 0
+  m_Name: unnamed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &660439613
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660439612}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 781054904}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &660439614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 660439612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c0c8ba1123c5f949b20e50d5dd6afe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  geometryType: 3
+--- !u!1 &781054903
+GameObject:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 781054904}
+  - component: {fileID: 781054905}
+  m_Layer: 0
+  m_Name: Collisions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &781054904
+Transform:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781054903}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 660439613}
+  m_Father: {fileID: 622647907}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &781054905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 781054903}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46398bc5d6905ad429a6d2d973afe002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &901625789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 901625790}
+  - component: {fileID: 901625791}
+  m_Layer: 0
+  m_Name: unnamed
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &901625790
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901625789}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1474637127}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &901625791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 901625789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8b2685e7e7719cd43814f41f35664c0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GeometryType: 3
 --- !u!1 &1003618995 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1000014254142504, guid: 4d293c8e162f3874b982baadd71153d2,
     type: 3}
   m_PrefabInstance: {fileID: 342266110}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1003618996
+--- !u!114 &1003618999
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -424,6 +2248,52 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2affc9ab0bbe32f4cb9b33f5d960d337, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1162849689
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162849691}
+  - component: {fileID: 1162849690}
+  m_Layer: 0
+  m_Name: NaoH25V40
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1162849690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162849689}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fbf4c79288754864b8d522b69f4b52a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FilePath: 
+--- !u!4 &1162849691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162849689}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 624640910}
+  - {fileID: 109974381}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1350122888
 GameObject:
   m_ObjectHideFlags: 0
@@ -518,40 +2388,50 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!21 &1498708652
-Material:
+--- !u!1 &1474637126
+GameObject:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1474637127}
+  - component: {fileID: 1474637128}
+  m_Layer: 0
+  m_Name: Visuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1474637127
+Transform:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1474637126}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 901625790}
+  m_Father: {fileID: 622647907}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1474637128
+MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sprites/Default
-  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: 
-  m_LightmapFlags: 4
-  m_EnableInstancingVariants: 0
-  m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
-  disabledShaderPasses: []
-  m_SavedProperties:
-    serializedVersion: 3
-    m_TexEnvs:
-    - _AlphaTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    - _MainTex:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
-    m_Floats:
-    - PixelSnap: 0
-    - _EnableExternalAlpha: 0
-    m_Colors:
-    - _Color: {r: 1, g: 1, b: 1, a: 1}
-    - _Flip: {r: 1, g: 1, b: 1, a: 1}
-    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
+  m_GameObject: {fileID: 1474637126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9090ae501ff9cd459bec5271d40249c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1535787383
 GameObject:
   m_ObjectHideFlags: 0
@@ -737,3 +2617,89 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1850695157
+GameObject:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1850695158}
+  - component: {fileID: 1850695159}
+  m_Layer: 0
+  m_Name: Collisions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1850695158
+Transform:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850695157}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 109974381}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1850695159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1850695157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46398bc5d6905ad429a6d2d973afe002, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!1 &1947175958
+GameObject:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1947175959}
+  - component: {fileID: 1947175960}
+  m_Layer: 0
+  m_Name: Visuals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1947175959
+Transform:
+  m_ObjectHideFlags: 8
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947175958}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 109974381}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1947175960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1947175958}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9090ae501ff9cd459bec5271d40249c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
