@@ -58,3 +58,9 @@ sysinfo.txt
 
 # Crashlytics generated file
 crashlytics-build.properties
+
+
+# Ignore my Testfolder
+Project/NaoVR/Assets/Test
+Project/NaoVR/Assets/Test.meta
+
