@@ -27,8 +27,8 @@ public class IKControl : MonoBehaviour {
             //hips.rotation = hipsObj.rotation;
             Vector3 oldPosition = gameObject.transform.position;
             gameObject.transform.position = new Vector3(hipsObj.position.x, oldPosition.y, hipsObj.position.z);
-            Quaternion oldRotation = gameObject.transform.rotation;
-            gameObject.transform.rotation = Quaternion.Euler(oldRotation.eulerAngles.x, hipsObj.rotation.eulerAngles.y, oldRotation.eulerAngles.z);
+            //Quaternion oldRotation = gameObject.transform.rotation;
+            //gameObject.transform.rotation = Quaternion.Euler(oldRotation.eulerAngles.x, hipsObj.rotation.eulerAngles.y, oldRotation.eulerAngles.z);
 
             // offset to avoid showing mouth parts in view
             gameObject.transform.position += gameObject.transform.forward * -0.1f;
