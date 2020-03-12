@@ -5,7 +5,7 @@
       "app_key": "application.generated.unity.naovr.exe",
       "launch_type": "url",
       "url": "steam://launch/",
-      "action_manifest_path": "C:\\Users\\DHBW\\Documents\\NaoVR\\Project\\NaoVR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
+      "action_manifest_path": "C:\\dev\\cs\\NaoVR\\Project\\NaoVR\\Assets\\StreamingAssets\\SteamVR\\actions.json",
       "strings": {
         "en_us": {
           "name": "NaoVR [Testing]"
