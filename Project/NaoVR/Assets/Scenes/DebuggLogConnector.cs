@@ -13,8 +13,8 @@ public class DiagnosticConnector : MonoBehaviour
     {
         socket = GetComponentInParent<RosConnector>()?.RosSocket;
         // Subscription:
-        //string subscription_id = socket.Subscribe<DiagnosticArray>("/diagnostics", SubscriptionHandler);
-        //subscription_id = socket.Subscribe<DiagnosticArray>("/diagnostics", SubscriptionHandler);
+       // string subscription_id = socket.Subscribe<DiagnosticArray>("/diagnostics", SubscriptionHandler);
+       // subscription_id = socket.Subscribe<DiagnosticArray>("/diagnostics", SubscriptionHandler);
     }
 
     /*private static void SubscriptionHandler(DiagnosticArray message)

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Neck
   - Head
+  - projectile
+  - FxTemporaire
+  - Connector
   layers:
   - Default
   - TransparentFX

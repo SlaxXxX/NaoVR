@@ -1,22 +1,45 @@
 ﻿using RosSharp.RosBridgeClient;
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-//using rosapi = RosSharp.RosBridgeClient.MessageTypes.Rosapi;
+using rosapi = RosSharp.RosBridgeClient.Services.RosApi;
+using RosSharp.RosBridgeClient.Services;
 
 public class StiffnessControler : MonoBehaviour
 {
-    public RosSocket socket;
+    private RosSocket socket;
+    public bool stiffness;
     // Start is called before the first frame update
-    /*void Start()
+    void Start()
     {
-        socket = GetComponentInParent<RosConnector>()?.RosSocket;
-        socket.CallService<rosapi.GetParamRequest, rosapi.GetParamResponse>("/rosapi/get_param", ServiceCallHandler, new rosapi.GetParamRequest("/rosdistro", "default"));
+        GameObject Connector = GameObject.FindWithTag("Connector");
+        socket = Connector.GetComponent<RosConnector>()?.RosSocket;
+        socket.CallService<disableStiffnessRequest, disableStiffnessResponse>("/nao_robot/pose/body_stiffness/disable", ServiceCallHandler, new disableStiffnessRequest());
+        stiffness = false;
     }
 
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            if (stiffness)
+            {
+                socket.CallService<disableStiffnessRequest, disableStiffnessResponse>("/nao_robot/pose/body_stiffness/disable", ServiceCallHandler, new disableStiffnessRequest());
+                stiffness = false;
+            }
+            if (!stiffness)
+            {
+                socket.CallService<rosapi.GetParamRequest, rosapi.GetParamResponse>("/nao_robot/pose/body_stiffness/enable", ServiceCallHandler, new rosapi.GetParamRequest("/enable", "default"));
+                stiffness = true;
+            }
+        }
+    }
+
+    private static void ServiceCallHandler(disableStiffnessResponse message)
+    {
+
+    }
     private static void ServiceCallHandler(rosapi.GetParamResponse message)
     {
-        Console.WriteLine("ROS distro: " + message.value);
-    }*/
+
+    }
 }
