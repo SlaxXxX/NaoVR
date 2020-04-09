@@ -668,6 +668,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 20445300}
     m_Modifications:
+    - target: {fileID: 1483307121757725823, guid: d157ebc983141dd42bdc75c90cda35b4,
+        type: 3}
+      propertyPath: m_Name
+      value: RThumb1_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1483307121757725823, guid: d157ebc983141dd42bdc75c90cda35b4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3822722466423443372, guid: d157ebc983141dd42bdc75c90cda35b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -728,16 +738,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 1483307121757725823, guid: d157ebc983141dd42bdc75c90cda35b4,
-        type: 3}
-      propertyPath: m_Name
-      value: RThumb1_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483307121757725823, guid: d157ebc983141dd42bdc75c90cda35b4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2517277278185712838, guid: d157ebc983141dd42bdc75c90cda35b4, type: 3}
     - {fileID: 603672279586357607, guid: d157ebc983141dd42bdc75c90cda35b4, type: 3}
@@ -758,7 +758,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 71cd5967f6db198438c7545f0104c886, type: 2}
@@ -853,7 +853,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.026380002, z: 0.04895}
+  m_ConnectedAnchor: {x: 0.000000037252903, y: -0.026380002, z: 0.04895}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -889,7 +889,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: r_wrist_RThumb1_link_joint
+  JointName: RThumb1
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &28808280
@@ -1687,7 +1687,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: bbc9d1476d6ee9a45bc6d6e246ebf320, type: 2}
@@ -2017,11 +2017,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1440434754}
     m_Modifications:
-    - target: {fileID: 8760134958155650578, guid: d0b10024f77381d4288ee6055e1a34e0,
-        type: 3}
-      propertyPath: m_Name
-      value: HeadPitch_0.10
-      objectReference: {fileID: 0}
     - target: {fileID: 6489639963928426463, guid: d0b10024f77381d4288ee6055e1a34e0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -2076,6 +2071,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760134958155650578, guid: d0b10024f77381d4288ee6055e1a34e0,
+        type: 3}
+      propertyPath: m_Name
+      value: HeadPitch_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 3458215508695623247, guid: d0b10024f77381d4288ee6055e1a34e0, type: 3}
@@ -2172,7 +2172,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000055879354, y: 0.0000000037252903, z: 0.014360003}
+  m_ConnectedAnchor: {x: 0.0000000048894435, y: -0.0000000037252903, z: 0.014360002}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2203,12 +2203,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 109894319}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LFinger21_link_LFinger22_link_joint
+  JointName: LFinger22
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &109894326
@@ -2487,7 +2487,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000048428774, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -2523,7 +2523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RAnklePitch_r_ankle_joint
+  JointName: RAnkleRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &120173994
@@ -2987,11 +2987,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1130480253}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: c3648e8294353614ca3f45a7f7362a54,
-        type: 3}
-      propertyPath: m_Name
-      value: HeadYaw
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c3648e8294353614ca3f45a7f7362a54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -3046,6 +3041,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c3648e8294353614ca3f45a7f7362a54,
+        type: 3}
+      propertyPath: m_Name
+      value: HeadYaw
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c3648e8294353614ca3f45a7f7362a54, type: 3}
@@ -3897,7 +3897,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: f4fef11c9f2ba79478f396ee1c17da29, type: 2}
@@ -3960,7 +3960,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8300735d48c02a2498caa9310f7679e5, type: 2}
@@ -4132,7 +4132,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e3f5b8d7404963845b004e50401a7cb0, type: 2}
@@ -4389,7 +4389,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.01213, z: 0.05775}
+  m_ConnectedAnchor: {x: 0.000000037252903, y: -0.01213, z: 0.05775}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -4425,7 +4425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: r_wrist_r_gripper_joint
+  JointName: RHand
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &192300356
@@ -4536,11 +4536,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1171164863}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 1db4103e7699d6845b19f82a9cd1370e,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger12
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1db4103e7699d6845b19f82a9cd1370e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4611,6 +4606,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.009999999
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1db4103e7699d6845b19f82a9cd1370e,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger12
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1db4103e7699d6845b19f82a9cd1370e, type: 3}
 --- !u!1001 &198210249
@@ -4620,6 +4620,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1729280703}
     m_Modifications:
+    - target: {fileID: 1741125541039268986, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490434766280818707, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
+        type: 3}
+      propertyPath: m_Name
+      value: LThumb1_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3490434766280818707, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5690261040738216444, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4673,21 +4688,6 @@ PrefabInstance:
     - target: {fileID: 5690261040738216444, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1741125541039268986, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3490434766280818707, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
-        type: 3}
-      propertyPath: m_Name
-      value: LThumb1_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3490434766280818707, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -4756,16 +4756,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 348982133}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: a287a86bef52ddb499a2a67c9e55b909,
-        type: 3}
-      propertyPath: m_Name
-      value: LShoulderPitch
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: a287a86bef52ddb499a2a67c9e55b909,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a287a86bef52ddb499a2a67c9e55b909,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -4819,6 +4809,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: a287a86bef52ddb499a2a67c9e55b909,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a287a86bef52ddb499a2a67c9e55b909,
+        type: 3}
+      propertyPath: m_Name
+      value: LShoulderPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a287a86bef52ddb499a2a67c9e55b909,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -5339,7 +5339,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: bbc9d1476d6ee9a45bc6d6e246ebf320, type: 2}
@@ -5655,7 +5655,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3173e059edd40a74ab78a167e086262a, type: 2}
@@ -6119,7 +6119,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0.707106, y: 0.707106, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.05, y: -0.085, z: 0}
+  m_ConnectedAnchor: {x: 0.049999952, y: -0.085, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -6155,7 +6155,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: torso_RPelvis_joint
+  JointName: RHipYawPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &255137152
@@ -6434,6 +6434,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2644944823062952251, guid: fa58286f194e49b40b3bc20c0fad6b15,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8627705320138550536, guid: fa58286f194e49b40b3bc20c0fad6b15,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -6503,11 +6508,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 2644944823062952251, guid: fa58286f194e49b40b3bc20c0fad6b15,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4596540651954229410, guid: fa58286f194e49b40b3bc20c0fad6b15, type: 3}
@@ -7091,6 +7091,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 178450391}
     m_Modifications:
+    - target: {fileID: 791947575174224336, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
+        type: 3}
+      propertyPath: m_Name
+      value: LHipPitch_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 791947575174224336, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1725828568010995591, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8202143652456715434, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7144,21 +7159,6 @@ PrefabInstance:
     - target: {fileID: 8202143652456715434, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 791947575174224336, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
-        type: 3}
-      propertyPath: m_Name
-      value: LHipPitch_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 791947575174224336, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1725828568010995591, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -7455,7 +7455,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.015000001, y: 0, z: 0.105}
+  m_ConnectedAnchor: {x: -0.015000038, y: 0, z: 0.105}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -7491,7 +7491,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LBicep_LElbow_joint
+  JointName: LElbowYaw
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &295525510
@@ -7574,6 +7574,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 679665659}
     m_Modifications:
+    - target: {fileID: 4058007714551498602, guid: fa27949f769792d458cd24fb4f78835e,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger21_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 7733997407218817018, guid: fa27949f769792d458cd24fb4f78835e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -7629,11 +7634,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4058007714551498602, guid: fa27949f769792d458cd24fb4f78835e,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger21_0.10
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 585983929964513382, guid: fa27949f769792d458cd24fb4f78835e, type: 3}
     - {fileID: 8707127365754161707, guid: fa27949f769792d458cd24fb4f78835e, type: 3}
@@ -7654,7 +7654,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 20941e80945361048a106497a37828e8, type: 2}
@@ -7805,7 +7805,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8a14e904287bad43a60e4505c46bcc9, type: 2}
@@ -7871,7 +7871,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8e9cbec651761a4db25a86b72e46127, type: 2}
@@ -8536,7 +8536,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.098, y: 0.1, z: 0}
+  m_ConnectedAnchor: {x: -0.09800005, y: 0.1, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -8572,7 +8572,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: torso_LShoulder_joint
+  JointName: LShoulderPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &326610059
@@ -8670,7 +8670,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8bbb44cd52019994597c8892bd4d1c77, type: 2}
@@ -8957,7 +8957,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0d74630a05ca4394bafd0b128a7cf266, type: 2}
@@ -8968,6 +8968,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 603342693}
     m_Modifications:
+    - target: {fileID: 392298120077668761, guid: cea1475955629bd4b856a2d8cb7a9bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062487886244163841, guid: cea1475955629bd4b856a2d8cb7a9bb9,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger22_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8062487886244163841, guid: cea1475955629bd4b856a2d8cb7a9bb9,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8527524492943061623, guid: cea1475955629bd4b856a2d8cb7a9bb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9038,21 +9053,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999999
       objectReference: {fileID: 0}
-    - target: {fileID: 392298120077668761, guid: cea1475955629bd4b856a2d8cb7a9bb9,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 8062487886244163841, guid: cea1475955629bd4b856a2d8cb7a9bb9,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger22_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8062487886244163841, guid: cea1475955629bd4b856a2d8cb7a9bb9,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6727724163151847865, guid: cea1475955629bd4b856a2d8cb7a9bb9, type: 3}
     - {fileID: 8756009808136108695, guid: cea1475955629bd4b856a2d8cb7a9bb9, type: 3}
@@ -9116,7 +9116,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: c35ad6108b5df864c873f869c2b9e154, type: 2}
@@ -9181,7 +9181,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 02dd7963db75bda4aa661cf4f81f6453, type: 2}
@@ -9292,7 +9292,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000052154064, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -9328,7 +9328,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LShoulder_LBicep_joint
+  JointName: LShoulderRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &347490244
@@ -9413,16 +9413,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 416687960}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: e01b584df2106e0468d25026b7ca0635,
-        type: 3}
-      propertyPath: m_Name
-      value: LElbowRoll
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: e01b584df2106e0468d25026b7ca0635,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e01b584df2106e0468d25026b7ca0635,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9476,6 +9466,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: e01b584df2106e0468d25026b7ca0635,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e01b584df2106e0468d25026b7ca0635,
+        type: 3}
+      propertyPath: m_Name
+      value: LElbowRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e01b584df2106e0468d25026b7ca0635,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -9575,11 +9575,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2025842226}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 7370cf017cee686498473cb30bff31f2,
-        type: 3}
-      propertyPath: m_Name
-      value: RShoulderRoll
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7370cf017cee686498473cb30bff31f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9635,6 +9630,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7370cf017cee686498473cb30bff31f2,
+        type: 3}
+      propertyPath: m_Name
+      value: RShoulderRoll
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7370cf017cee686498473cb30bff31f2, type: 3}
 --- !u!1 &351595949
@@ -9689,11 +9689,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 253144193}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 478a0dfb262df18458cb065c2b1a14b0,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger23
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 478a0dfb262df18458cb065c2b1a14b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -9763,6 +9758,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010000003
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 478a0dfb262df18458cb065c2b1a14b0,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478a0dfb262df18458cb065c2b1a14b0, type: 3}
@@ -9840,7 +9840,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4f0693077571b2b4db6ef65d457d442f, type: 2}
@@ -9860,7 +9860,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9f98b4be82193bd4aad6ab8e8c168879, type: 2}
@@ -9880,7 +9880,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4f0693077571b2b4db6ef65d457d442f, type: 2}
@@ -10039,7 +10039,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000016763806, y: 7.512755e-10, z: 0.014360004}
+  m_ConnectedAnchor: {x: 0.000000017695129, y: 0.000000015652438, z: 0.014360001}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -10075,7 +10075,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RFinger12_link_RFinger13_link_joint
+  JointName: RFinger13
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &361807305
@@ -10282,7 +10282,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d12b8ab77943b7242930e37c4b443514, type: 2}
@@ -10302,7 +10302,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3ac9da40f6b0e2a4a97cf40884082445, type: 2}
@@ -10413,7 +10413,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.098, y: 0.1, z: 0}
+  m_ConnectedAnchor: {x: 0.09800005, y: 0.1, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -10449,7 +10449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: torso_RShoulder_joint
+  JointName: RShoulderPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &373984029
@@ -10498,7 +10498,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: abbe3c1cc3e73024984ed80b47a200db, type: 2}
@@ -10518,7 +10518,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4a0ea737908953d41a8a4f6fecbc73f2, type: 2}
@@ -10700,17 +10700,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7196241777173098155, guid: 093f79e4cc511414395bb6aa886e6b3d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 218309732186264576, guid: 093f79e4cc511414395bb6aa886e6b3d,
         type: 3}
       propertyPath: m_Name
       value: LKneePitch_0.10
       objectReference: {fileID: 0}
     - target: {fileID: 218309732186264576, guid: 093f79e4cc511414395bb6aa886e6b3d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7196241777173098155, guid: 093f79e4cc511414395bb6aa886e6b3d,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -12018,11 +12018,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 384605592}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 96ca3202e2b935d4684104b04f6553e1,
-        type: 3}
-      propertyPath: m_Name
-      value: LHipYawPitch
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 96ca3202e2b935d4684104b04f6553e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12078,6 +12073,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 96ca3202e2b935d4684104b04f6553e1,
+        type: 3}
+      propertyPath: m_Name
+      value: LHipYawPitch
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 96ca3202e2b935d4684104b04f6553e1, type: 3}
 --- !u!1 &461565707 stripped
@@ -12096,7 +12096,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ae5213073299f8f4688191e444fcc4a1, type: 2}
@@ -12116,7 +12116,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0ff934be195684c489236818fdd063c9, type: 2}
@@ -12187,7 +12187,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a83273b54f1981c419a5143a2a6d7636, type: 2}
@@ -12421,7 +12421,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000003085006, y: 5.2386895e-10, z: 0.014360007}
+  m_ConnectedAnchor: {x: 0.0000000030848675, y: -0.000000036729034, z: 0.014360007}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -12457,7 +12457,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RThumb1_link_RThumb2_link_joint
+  JointName: RThumb2
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &474823129
@@ -12563,11 +12563,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 555699141}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: e01b584df2106e0468d25026b7ca0635,
-        type: 3}
-      propertyPath: m_Name
-      value: LElbowRoll
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: e01b584df2106e0468d25026b7ca0635,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12622,6 +12617,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: e01b584df2106e0468d25026b7ca0635,
+        type: 3}
+      propertyPath: m_Name
+      value: LElbowRoll
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e01b584df2106e0468d25026b7ca0635, type: 3}
@@ -12682,11 +12682,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 516721515}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 60133cb0c63013c4985211e61303ec58,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger13
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 60133cb0c63013c4985211e61303ec58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -12756,6 +12751,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010000003
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 60133cb0c63013c4985211e61303ec58,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60133cb0c63013c4985211e61303ec58, type: 3}
@@ -13090,7 +13090,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 71cd5967f6db198438c7545f0104c886, type: 2}
@@ -13493,7 +13493,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 20941e80945361048a106497a37828e8, type: 2}
@@ -13565,7 +13565,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 294b9935b272441489ebcb700d8e52c3, type: 2}
@@ -13576,11 +13576,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 523262634}
     m_Modifications:
-    - target: {fileID: 8760996091018132269, guid: 9b3afcf29fcc5b146a59fcbce2cc7281,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 695717392832638173, guid: 9b3afcf29fcc5b146a59fcbce2cc7281,
         type: 3}
       propertyPath: m_Name
@@ -13644,6 +13639,11 @@ PrefabInstance:
     - target: {fileID: 1869865402897298574, guid: 9b3afcf29fcc5b146a59fcbce2cc7281,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760996091018132269, guid: 9b3afcf29fcc5b146a59fcbce2cc7281,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -13897,7 +13897,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.1, z: 0}
+  m_ConnectedAnchor: {x: 0.000000048428774, y: -0.1, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -13933,7 +13933,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LThigh_LTibia_joint
+  JointName: LKneePitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &517555772
@@ -13979,6 +13979,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1703439987}
     m_Modifications:
+    - target: {fileID: 3791738699805815428, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736273143382418928, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
+        type: 3}
+      propertyPath: m_Name
+      value: RWristYaw_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736273143382418928, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5432761672954252560, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14032,21 +14047,6 @@ PrefabInstance:
     - target: {fileID: 5432761672954252560, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3791738699805815428, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4736273143382418928, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
-        type: 3}
-      propertyPath: m_Name
-      value: RWristYaw_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4736273143382418928, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -14224,7 +14224,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000010244551, y: -0.0000000016825984, z: 0.014360024}
+  m_ConnectedAnchor: {x: 0.00000001303852, y: -0.00000004638609, z: 0.014360016}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -14255,12 +14255,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 523993510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LFinger22_link_LFinger23_link_joint
+  JointName: LFinger23
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &523993516
@@ -14567,11 +14567,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 333210666}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 01df6ca6cf7d08e44b8fc3e586519718,
-        type: 3}
-      propertyPath: m_Name
-      value: RThumb2
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 01df6ca6cf7d08e44b8fc3e586519718,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -14636,6 +14631,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.010000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 01df6ca6cf7d08e44b8fc3e586519718,
+        type: 3}
+      propertyPath: m_Name
+      value: RThumb2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01df6ca6cf7d08e44b8fc3e586519718, type: 3}
@@ -14743,7 +14743,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &530589168
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14765,7 +14765,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 530589167}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
+  m_LocalPosition: {x: 1.198, y: -0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1825972063}
@@ -15362,7 +15362,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0d74630a05ca4394bafd0b128a7cf266, type: 2}
@@ -16325,7 +16325,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a842ff390a8407746ae03f095c6037c5, type: 2}
@@ -16372,7 +16372,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -16440,7 +16440,7 @@ GameObject:
   - component: {fileID: 595797925}
   m_Layer: 0
   m_Name: Ros Connector
-  m_TagString: Untagged
+  m_TagString: Connector
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16588,7 +16588,7 @@ MonoBehaviour:
   Timeout: 10
   Serializer: 0
   Protocol: 1
-  RosBridgeServerUrl: ws://192.168.100.48:9090
+  RosBridgeServerUrl: ws://192.168.0.194:9090
 --- !u!4 &595797924
 Transform:
   m_ObjectHideFlags: 0
@@ -16615,7 +16615,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: aae1d8da5a3c0644bb98a540ca597dfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Topic: /nao_robot/pose/joint_angles
+  Topic: /joint_angles
   JointStateReaders:
   - {fileID: 1572352847}
   - {fileID: 864369012}
@@ -16637,28 +16637,12 @@ MonoBehaviour:
   - {fileID: 1894770990}
   - {fileID: 1057260016}
   - {fileID: 1145218219}
-  - {fileID: 1934227177}
-  - {fileID: 109894322}
-  - {fileID: 523993512}
-  - {fileID: 923345827}
-  - {fileID: 1234626476}
-  - {fileID: 1989922118}
-  - {fileID: 1884869393}
-  - {fileID: 1036903537}
   - {fileID: 373984024}
   - {fileID: 1130505897}
   - {fileID: 1179164019}
   - {fileID: 1507652420}
   - {fileID: 1999223824}
   - {fileID: 192300351}
-  - {fileID: 1502310840}
-  - {fileID: 2120066250}
-  - {fileID: 946117594}
-  - {fileID: 2146911573}
-  - {fileID: 979236398}
-  - {fileID: 361807301}
-  - {fileID: 28808276}
-  - {fileID: 474823125}
   FrameId: Unity
 --- !u!114 &595797926
 MonoBehaviour:
@@ -16733,7 +16717,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a83273b54f1981c419a5143a2a6d7636, type: 2}
@@ -17475,6 +17459,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1369012753}
     m_Modifications:
+    - target: {fileID: 1483307121757725823, guid: d157ebc983141dd42bdc75c90cda35b4,
+        type: 3}
+      propertyPath: m_Name
+      value: RThumb1_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 3822722466423443372, guid: d157ebc983141dd42bdc75c90cda35b4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -17529,11 +17518,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1483307121757725823, guid: d157ebc983141dd42bdc75c90cda35b4,
-        type: 3}
-      propertyPath: m_Name
-      value: RThumb1_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2517277278185712838, guid: d157ebc983141dd42bdc75c90cda35b4, type: 3}
@@ -17732,7 +17716,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9f98b4be82193bd4aad6ab8e8c168879, type: 2}
@@ -18369,7 +18353,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d93ee113508b9e5448498dde3afc3d5a, type: 2}
@@ -18629,7 +18613,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8409721b38583534db813740930e7287, type: 2}
@@ -18841,11 +18825,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 350794401}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 75cb3590c277a8240b52db224fe299fe,
-        type: 3}
-      propertyPath: m_Name
-      value: RThumb1
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 75cb3590c277a8240b52db224fe299fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -18900,6 +18879,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 75cb3590c277a8240b52db224fe299fe,
+        type: 3}
+      propertyPath: m_Name
+      value: RThumb1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 75cb3590c277a8240b52db224fe299fe, type: 3}
@@ -18963,7 +18947,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8e9cbec651761a4db25a86b72e46127, type: 2}
@@ -18983,7 +18967,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1a776b1d91177b44283f7d7966b5f5e3, type: 2}
@@ -19060,7 +19044,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a71a7390df0988b4fb409afa8a631898, type: 2}
@@ -19121,6 +19105,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 161949024}
     m_Modifications:
+    - target: {fileID: 3528194623293414144, guid: bb1fd248a1ad8d8459d3c958491b9128,
+        type: 3}
+      propertyPath: m_Name
+      value: LAnkleRoll_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 8010581617344555913, guid: bb1fd248a1ad8d8459d3c958491b9128,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -19175,11 +19164,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3528194623293414144, guid: bb1fd248a1ad8d8459d3c958491b9128,
-        type: 3}
-      propertyPath: m_Name
-      value: LAnkleRoll_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5283930717627030959, guid: bb1fd248a1ad8d8459d3c958491b9128, type: 3}
@@ -19696,7 +19680,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9caa1baa8768d4c4fb30691109b3bd27, type: 2}
@@ -19895,7 +19879,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7987e4086b86367478c6cf09e63c2532, type: 2}
@@ -20038,16 +20022,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 745054213}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 95561f1e36318f648b8cc5f8486424d6,
-        type: 3}
-      propertyPath: m_Name
-      value: RElbowRoll
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 95561f1e36318f648b8cc5f8486424d6,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 95561f1e36318f648b8cc5f8486424d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20101,6 +20075,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 95561f1e36318f648b8cc5f8486424d6,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 95561f1e36318f648b8cc5f8486424d6,
+        type: 3}
+      propertyPath: m_Name
+      value: RElbowRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 95561f1e36318f648b8cc5f8486424d6,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -20212,7 +20196,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.000000048428774, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -20248,7 +20232,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LPelvis_LHip_joint
+  JointName: LHipRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &732853219
@@ -20464,11 +20448,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 498754929}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 95561f1e36318f648b8cc5f8486424d6,
-        type: 3}
-      propertyPath: m_Name
-      value: RElbowRoll
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 95561f1e36318f648b8cc5f8486424d6,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -20523,6 +20502,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 95561f1e36318f648b8cc5f8486424d6,
+        type: 3}
+      propertyPath: m_Name
+      value: RElbowRoll
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 95561f1e36318f648b8cc5f8486424d6, type: 3}
@@ -20681,7 +20665,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 9caa1baa8768d4c4fb30691109b3bd27, type: 2}
@@ -20745,7 +20729,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d8a14e904287bad43a60e4505c46bcc9, type: 2}
@@ -20756,7 +20740,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1160600873}
     m_Modifications:
-    - target: {fileID: 1710569327199171682, guid: 04b218ca7fb5e724c909db389accda7b,
+    - target: {fileID: 1000305516397424792, guid: 04b218ca7fb5e724c909db389accda7b,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger12_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 1000305516397424792, guid: 04b218ca7fb5e724c909db389accda7b,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -20826,12 +20815,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999999
       objectReference: {fileID: 0}
-    - target: {fileID: 1000305516397424792, guid: 04b218ca7fb5e724c909db389accda7b,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger12_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 1000305516397424792, guid: 04b218ca7fb5e724c909db389accda7b,
+    - target: {fileID: 1710569327199171682, guid: 04b218ca7fb5e724c909db389accda7b,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -21123,7 +21107,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.10289999, z: 0}
+  m_ConnectedAnchor: {x: 0.000000048428774, y: -0.10289999, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -21159,7 +21143,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LTibia_LAnklePitch_joint
+  JointName: LAnklePitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &768032752
@@ -21279,11 +21263,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1206312539}
     m_Modifications:
-    - target: {fileID: 8885878215641208817, guid: 6a14619f75445e945beee7bec7bae523,
-        type: 3}
-      propertyPath: m_Name
-      value: LShoulderRoll_0.10
-      objectReference: {fileID: 0}
     - target: {fileID: 5991659553402748842, guid: 6a14619f75445e945beee7bec7bae523,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21338,6 +21317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885878215641208817, guid: 6a14619f75445e945beee7bec7bae523,
+        type: 3}
+      propertyPath: m_Name
+      value: LShoulderRoll_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6694601715587918653, guid: 6a14619f75445e945beee7bec7bae523, type: 3}
@@ -21583,7 +21567,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d20ba69771b71d447b78fa13cc36a7df, type: 2}
@@ -21764,11 +21748,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 286333846}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 90f8347897d1c064ba4fb81340ddaaec,
-        type: 3}
-      propertyPath: m_Name
-      value: LHipPitch
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 90f8347897d1c064ba4fb81340ddaaec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -21823,6 +21802,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 90f8347897d1c064ba4fb81340ddaaec,
+        type: 3}
+      propertyPath: m_Name
+      value: LHipPitch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f8347897d1c064ba4fb81340ddaaec, type: 3}
@@ -22054,7 +22038,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3173e059edd40a74ab78a167e086262a, type: 2}
@@ -22715,12 +22699,7 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1937117114}
     m_Modifications:
-    - target: {fileID: 8760134958155650578, guid: d0b10024f77381d4288ee6055e1a34e0,
-        type: 3}
-      propertyPath: m_Name
-      value: HeadPitch_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8760134958155650578, guid: d0b10024f77381d4288ee6055e1a34e0,
+    - target: {fileID: 710050519815857600, guid: d0b10024f77381d4288ee6055e1a34e0,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -22780,7 +22759,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 710050519815857600, guid: d0b10024f77381d4288ee6055e1a34e0,
+    - target: {fileID: 8760134958155650578, guid: d0b10024f77381d4288ee6055e1a34e0,
+        type: 3}
+      propertyPath: m_Name
+      value: HeadPitch_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8760134958155650578, guid: d0b10024f77381d4288ee6055e1a34e0,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -23113,7 +23097,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: Neck_Head_joint
+  JointName: HeadPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &864369017
@@ -23583,17 +23567,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 56759628}
     m_Modifications:
-    - target: {fileID: 417677557634742382, guid: d2fe9743d8ea39a409437ce3201490fd,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 382942159619371049, guid: d2fe9743d8ea39a409437ce3201490fd,
         type: 3}
       propertyPath: m_Name
       value: RAnkleRoll_0.10
       objectReference: {fileID: 0}
     - target: {fileID: 382942159619371049, guid: d2fe9743d8ea39a409437ce3201490fd,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 417677557634742382, guid: d2fe9743d8ea39a409437ce3201490fd,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -23673,7 +23657,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d20ba69771b71d447b78fa13cc36a7df, type: 2}
@@ -23902,7 +23886,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: f4fef11c9f2ba79478f396ee1c17da29, type: 2}
@@ -23913,6 +23897,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 154601851}
     m_Modifications:
+    - target: {fileID: 2841465869949728153, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger13_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2841465869949728153, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3273496545330697301, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -23984,16 +23978,6 @@ PrefabInstance:
       value: 0.9999999
       objectReference: {fileID: 0}
     - target: {fileID: 8469139067925126409, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2841465869949728153, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger13_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 2841465869949728153, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -24213,7 +24197,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 553826285}
     m_Modifications:
-    - target: {fileID: 7853306464221052270, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
+    - target: {fileID: 4307156883159652367, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
+        type: 3}
+      propertyPath: m_Name
+      value: RElbowRoll_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4307156883159652367, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -24273,12 +24262,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4307156883159652367, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
-        type: 3}
-      propertyPath: m_Name
-      value: RElbowRoll_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307156883159652367, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
+    - target: {fileID: 7853306464221052270, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -24731,16 +24715,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1705975023}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: cb0072a6f8f46964b8bdbb3a42320974,
-        type: 3}
-      propertyPath: m_Name
-      value: RHipRoll
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: cb0072a6f8f46964b8bdbb3a42320974,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cb0072a6f8f46964b8bdbb3a42320974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -24794,6 +24768,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: cb0072a6f8f46964b8bdbb3a42320974,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cb0072a6f8f46964b8bdbb3a42320974,
+        type: 3}
+      propertyPath: m_Name
+      value: RHipRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cb0072a6f8f46964b8bdbb3a42320974,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -24935,7 +24919,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.011569999, y: -0.0030400008, z: 0.06906999}
+  m_ConnectedAnchor: {x: -0.011570014, y: -0.0030400008, z: 0.06906999}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -24971,7 +24955,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: l_wrist_LFinger11_link_joint
+  JointName: LFinger11
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &923345831
@@ -25060,7 +25044,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 627270856}
     m_Modifications:
-    - target: {fileID: 8110570906325962785, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
+    - target: {fileID: 403688273737496933, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger11_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 403688273737496933, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -25120,12 +25109,7 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 403688273737496933, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger11_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 403688273737496933, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
+    - target: {fileID: 8110570906325962785, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -25316,16 +25300,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1227546148}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 01df6ca6cf7d08e44b8fc3e586519718,
-        type: 3}
-      propertyPath: m_Name
-      value: RThumb2
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 01df6ca6cf7d08e44b8fc3e586519718,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 01df6ca6cf7d08e44b8fc3e586519718,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -25390,6 +25364,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.y
       value: 0.010000001
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 01df6ca6cf7d08e44b8fc3e586519718,
+        type: 3}
+      propertyPath: m_Name
+      value: RThumb2
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 01df6ca6cf7d08e44b8fc3e586519718,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 01df6ca6cf7d08e44b8fc3e586519718, type: 3}
@@ -25865,7 +25849,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.00000000977889, y: 0.000000005767984, z: 0.014360023}
+  m_ConnectedAnchor: {x: 0.000000006984921, y: 0.000000033707668, z: 0.014360029}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -25901,7 +25885,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RFinger22_link_RFinger23_link_joint
+  JointName: RFinger23
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &946117598
@@ -26011,7 +25995,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8409721b38583534db813740930e7287, type: 2}
@@ -26304,7 +26288,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000048428774, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -26340,7 +26324,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RPelvis_RHip_joint
+  JointName: RHipRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &962405369
@@ -26433,7 +26417,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 29c3e35e67a109848987ff7b66d46a1b, type: 2}
@@ -26727,7 +26711,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000018626451, y: -0.0000000027939677, z: 0.014359997}
+  m_ConnectedAnchor: {x: 0.0000000011641532, y: 0.000000004656613, z: 0.014359996}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -26763,7 +26747,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RFinger11_link_RFinger12_link_joint
+  JointName: RFinger12
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &979236402
@@ -27218,6 +27202,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1836797043}
     m_Modifications:
+    - target: {fileID: 3490434766280818707, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
+        type: 3}
+      propertyPath: m_Name
+      value: LThumb1_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 5690261040738216444, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27272,11 +27261,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3490434766280818707, guid: 9df08a09ea7fc6945affc2ae1cc95e2f,
-        type: 3}
-      propertyPath: m_Name
-      value: LThumb1_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 2331588270095963488, guid: 9df08a09ea7fc6945affc2ae1cc95e2f, type: 3}
@@ -27401,6 +27385,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 644484286}
     m_Modifications:
+    - target: {fileID: 2536861332420684624, guid: 8806f08619f9d86468c720eea11dcc27,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4165015559267972730, guid: 8806f08619f9d86468c720eea11dcc27,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27454,11 +27443,6 @@ PrefabInstance:
     - target: {fileID: 4165015559267972730, guid: 8806f08619f9d86468c720eea11dcc27,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2536861332420684624, guid: 8806f08619f9d86468c720eea11dcc27,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4666769111194674491, guid: 8806f08619f9d86468c720eea11dcc27,
@@ -27703,6 +27687,76 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBaseLink: 0
+--- !u!1 &1019925888
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019925891}
+  - component: {fileID: 1019925890}
+  - component: {fileID: 1019925889}
+  - component: {fileID: 1019925892}
+  m_Layer: 0
+  m_Name: NaoSchnittstelle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1019925889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019925888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8d15d6a848d43fb418dad8610f256c83, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1019925890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019925888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56f10b9dd98a5e8468cb5fe2fae9f7a8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stiffness: 0
+--- !u!4 &1019925891
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019925888}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 2.0690331, y: -2.125103, z: 5.46465}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1019925892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019925888}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 405356c0707435c41b1a0521155668c3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1020466240
 GameObject:
   m_ObjectHideFlags: 8
@@ -27762,7 +27816,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 29c3e35e67a109848987ff7b66d46a1b, type: 2}
@@ -27773,6 +27827,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 614324070}
     m_Modifications:
+    - target: {fileID: 4307156883159652367, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
+        type: 3}
+      propertyPath: m_Name
+      value: RElbowRoll_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 7743215167528465613, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -27827,11 +27886,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4307156883159652367, guid: 47fc770e780e3ff4f83818dc6c4f04f8,
-        type: 3}
-      propertyPath: m_Name
-      value: RElbowRoll_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8474705283371420689, guid: 47fc770e780e3ff4f83818dc6c4f04f8, type: 3}
@@ -28060,7 +28114,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89f46016e05399341b4d755ddc54c57d, type: 2}
@@ -28144,7 +28198,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000003085006, y: 5.2386895e-10, z: 0.014360007}
+  m_ConnectedAnchor: {x: 0.0000000030851446, y: 0.000000037776772, z: 0.014360007}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -28180,7 +28234,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LThumb1_link_LThumb2_link_joint
+  JointName: LThumb2
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1036903541
@@ -28338,6 +28392,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2025516044}
     m_Modifications:
+    - target: {fileID: 520497505921459845, guid: bb1fd248a1ad8d8459d3c958491b9128,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528194623293414144, guid: bb1fd248a1ad8d8459d3c958491b9128,
+        type: 3}
+      propertyPath: m_Name
+      value: LAnkleRoll_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 3528194623293414144, guid: bb1fd248a1ad8d8459d3c958491b9128,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8010581617344555913, guid: bb1fd248a1ad8d8459d3c958491b9128,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -28391,21 +28460,6 @@ PrefabInstance:
     - target: {fileID: 8010581617344555913, guid: bb1fd248a1ad8d8459d3c958491b9128,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3528194623293414144, guid: bb1fd248a1ad8d8459d3c958491b9128,
-        type: 3}
-      propertyPath: m_Name
-      value: LAnkleRoll_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3528194623293414144, guid: bb1fd248a1ad8d8459d3c958491b9128,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 520497505921459845, guid: bb1fd248a1ad8d8459d3c958491b9128,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -28689,7 +28743,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0.05595001}
+  m_ConnectedAnchor: {x: -0.000000037252903, y: 0, z: 0.05595001}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -28725,7 +28779,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LForeArm_l_wrist_joint
+  JointName: LWristYaw
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1057260021
@@ -29124,6 +29178,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1494122520}
     m_Modifications:
+    - target: {fileID: 1000305516397424792, guid: 04b218ca7fb5e724c909db389accda7b,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger12_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 1108009695504497391, guid: 04b218ca7fb5e724c909db389accda7b,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29189,11 +29248,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999999
       objectReference: {fileID: 0}
-    - target: {fileID: 1000305516397424792, guid: 04b218ca7fb5e724c909db389accda7b,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger12_0.10
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1932108745666248492, guid: 04b218ca7fb5e724c909db389accda7b, type: 3}
     - {fileID: 5629758991786809339, guid: 04b218ca7fb5e724c909db389accda7b, type: 3}
@@ -29214,7 +29268,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: ae5213073299f8f4688191e444fcc4a1, type: 2}
@@ -29326,17 +29380,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 129277859}
     m_Modifications:
-    - target: {fileID: 4062261952979382798, guid: bb75c1c83da46474487c2956c37915fa,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3142049319884959763, guid: bb75c1c83da46474487c2956c37915fa,
         type: 3}
       propertyPath: m_Name
       value: RHipRoll_0.10
       objectReference: {fileID: 0}
     - target: {fileID: 3142049319884959763, guid: bb75c1c83da46474487c2956c37915fa,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4062261952979382798, guid: bb75c1c83da46474487c2956c37915fa,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -29476,11 +29530,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 256995463}
     m_Modifications:
-    - target: {fileID: 3895407096308420362, guid: 7a391ff6ac739c743895a551a4f9ccda,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1450806857879450482, guid: 7a391ff6ac739c743895a551a4f9ccda,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -29534,6 +29583,11 @@ PrefabInstance:
     - target: {fileID: 1450806857879450482, guid: 7a391ff6ac739c743895a551a4f9ccda,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3895407096308420362, guid: 7a391ff6ac739c743895a551a4f9ccda,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8919533338590184843, guid: 7a391ff6ac739c743895a551a4f9ccda,
@@ -30317,7 +30371,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.000000052154064, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -30353,7 +30407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RShoulder_RBicep_joint
+  JointName: RShoulderRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1130505902
@@ -30847,7 +30901,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.012309998, z: 0.05775}
+  m_ConnectedAnchor: {x: -0.000000037252903, y: -0.012309998, z: 0.05775}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -30883,7 +30937,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: l_wrist_l_gripper_joint
+  JointName: LHand
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1145218224
@@ -31483,7 +31537,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.015000001, y: 0, z: 0.105}
+  m_ConnectedAnchor: {x: 0.015000038, y: 0, z: 0.105}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -31519,7 +31573,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RBicep_RElbow_joint
+  JointName: RElbowYaw
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1179164024
@@ -32362,7 +32416,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: c35ad6108b5df864c873f869c2b9e154, type: 2}
@@ -32501,7 +32555,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000011641532, y: 0.000000004656613, z: 0.014359996}
+  m_ConnectedAnchor: {x: -0.0000000030267984, y: 0.000000048428774, z: 0.014359989}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -32537,7 +32591,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LFinger11_link_LFinger12_link_joint
+  JointName: LFinger12
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1234626480
@@ -33349,7 +33403,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.1, z: 0}
+  m_ConnectedAnchor: {x: -0.000000048428774, y: -0.1, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -33385,7 +33439,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RThigh_RTibia_joint
+  JointName: RKneePitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1260520207
@@ -33461,7 +33515,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
@@ -33519,16 +33573,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 152304681}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 60133cb0c63013c4985211e61303ec58,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger13
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 60133cb0c63013c4985211e61303ec58,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 60133cb0c63013c4985211e61303ec58,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33599,6 +33643,16 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.010000003
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 60133cb0c63013c4985211e61303ec58,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger13
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 60133cb0c63013c4985211e61303ec58,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 60133cb0c63013c4985211e61303ec58, type: 3}
 --- !u!1 &1266292236
@@ -33646,6 +33700,40 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GeometryType: 3
+--- !u!21 &1266817078
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Sprites/Default
+  m_Shader: {fileID: 10753, guid: 0000000000000000f000000000000000, type: 0}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _AlphaTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - PixelSnap: 0
+    - _EnableExternalAlpha: 0
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _Flip: {r: 1, g: 1, b: 1, a: 1}
+    - _RendererColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &1267648625
 GameObject:
   m_ObjectHideFlags: 8
@@ -33697,11 +33785,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1393009973}
     m_Modifications:
-    - target: {fileID: 7447742017599943905, guid: 6e18e86a1b985174b96b9782744db461,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 3905802095595816762, guid: 6e18e86a1b985174b96b9782744db461,
         type: 3}
       propertyPath: m_Name
@@ -33767,6 +33850,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7447742017599943905, guid: 6e18e86a1b985174b96b9782744db461,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8951878325910958807, guid: 6e18e86a1b985174b96b9782744db461, type: 3}
     - {fileID: 8370234205348681073, guid: 6e18e86a1b985174b96b9782744db461, type: 3}
@@ -33778,16 +33866,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 113613094}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 7370cf017cee686498473cb30bff31f2,
-        type: 3}
-      propertyPath: m_Name
-      value: RShoulderRoll
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 7370cf017cee686498473cb30bff31f2,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 7370cf017cee686498473cb30bff31f2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -33841,6 +33919,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 7370cf017cee686498473cb30bff31f2,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7370cf017cee686498473cb30bff31f2,
+        type: 3}
+      propertyPath: m_Name
+      value: RShoulderRoll
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 7370cf017cee686498473cb30bff31f2,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -33983,17 +34071,17 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 48610010}
     m_Modifications:
-    - target: {fileID: 5273254945145254087, guid: 0aa92756a0c108042a280fb2e10d8f2f,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4460843836764182717, guid: 0aa92756a0c108042a280fb2e10d8f2f,
         type: 3}
       propertyPath: m_Name
       value: RFinger21_0.10
       objectReference: {fileID: 0}
     - target: {fileID: 4460843836764182717, guid: 0aa92756a0c108042a280fb2e10d8f2f,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5273254945145254087, guid: 0aa92756a0c108042a280fb2e10d8f2f,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -34114,16 +34202,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2088923369}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 90f8347897d1c064ba4fb81340ddaaec,
-        type: 3}
-      propertyPath: m_Name
-      value: LHipPitch
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 90f8347897d1c064ba4fb81340ddaaec,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 90f8347897d1c064ba4fb81340ddaaec,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34179,6 +34257,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 90f8347897d1c064ba4fb81340ddaaec,
+        type: 3}
+      propertyPath: m_Name
+      value: LHipPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 90f8347897d1c064ba4fb81340ddaaec,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 90f8347897d1c064ba4fb81340ddaaec, type: 3}
 --- !u!1001 &1294335678
@@ -34188,11 +34276,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1547823549}
     m_Modifications:
-    - target: {fileID: 3461123235769140075, guid: 6b56baadef9e83e469e9403850b5e338,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 661249501176525036, guid: 6b56baadef9e83e469e9403850b5e338,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -34246,6 +34329,11 @@ PrefabInstance:
     - target: {fileID: 661249501176525036, guid: 6b56baadef9e83e469e9403850b5e338,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3461123235769140075, guid: 6b56baadef9e83e469e9403850b5e338,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5837536662756828473, guid: 6b56baadef9e83e469e9403850b5e338,
@@ -35270,7 +35358,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0ff934be195684c489236818fdd063c9, type: 2}
@@ -35410,6 +35498,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 638636872}
     m_Modifications:
+    - target: {fileID: 791947575174224336, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
+        type: 3}
+      propertyPath: m_Name
+      value: LHipPitch_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 8202143652456715434, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35465,11 +35558,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 791947575174224336, guid: 2fabdc7583feac1499f05bb6bf7bafbd,
-        type: 3}
-      propertyPath: m_Name
-      value: LHipPitch_0.10
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 436762193807414719, guid: 2fabdc7583feac1499f05bb6bf7bafbd, type: 3}
     - {fileID: 195420045348463264, guid: 2fabdc7583feac1499f05bb6bf7bafbd, type: 3}
@@ -35490,7 +35578,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 3ac9da40f6b0e2a4a97cf40884082445, type: 2}
@@ -35635,6 +35723,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4547652217194253834, guid: ab224cfda41d2d84aa9738c50196cfe4,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger23_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4547652217194253834, guid: ab224cfda41d2d84aa9738c50196cfe4,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4562003230177713162, guid: ab224cfda41d2d84aa9738c50196cfe4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35705,16 +35803,6 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999996
       objectReference: {fileID: 0}
-    - target: {fileID: 4547652217194253834, guid: ab224cfda41d2d84aa9738c50196cfe4,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger23_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4547652217194253834, guid: ab224cfda41d2d84aa9738c50196cfe4,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4622874940472786814, guid: ab224cfda41d2d84aa9738c50196cfe4, type: 3}
     - {fileID: 3108609452329722976, guid: ab224cfda41d2d84aa9738c50196cfe4, type: 3}
@@ -35725,6 +35813,169 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1272138676}
   m_PrefabAsset: {fileID: 0}
+--- !u!43 &1344339131
+Mesh:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  serializedVersion: 10
+  m_SubMeshes:
+  - serializedVersion: 2
+    firstByte: 0
+    indexCount: 24
+    topology: 0
+    baseVertex: 0
+    firstVertex: 0
+    vertexCount: 8
+    localAABB:
+      m_Center: {x: 0, y: 0.01, z: 0}
+      m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_Shapes:
+    vertices: []
+    shapes: []
+    channels: []
+    fullWeights: []
+  m_BindPose: []
+  m_BoneNameHashes: 
+  m_RootBoneNameHash: 0
+  m_BonesAABB: []
+  m_VariableBoneCountWeights:
+    m_Data: 
+  m_MeshCompression: 0
+  m_IsReadable: 1
+  m_KeepVertices: 1
+  m_KeepIndices: 1
+  m_IndexFormat: 0
+  m_IndexBuffer: 000004000100010004000500010005000200020005000600020006000300030006000700030007000000000007000400
+  m_VertexData:
+    serializedVersion: 3
+    m_VertexCount: 8
+    m_Channels:
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 3
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 12
+      format: 0
+      dimension: 4
+    - stream: 0
+      offset: 28
+      format: 0
+      dimension: 2
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    - stream: 0
+      offset: 0
+      format: 0
+      dimension: 0
+    m_DataSize: 288
+    _typelessdata: 0000c03f0ad7233c000090bf000000000000803f0000803f0000803f00000000000000000000c0bf0ad7233c000090bf000000000000803f0000803f0000803f0000803f000000000000c0bf0ad7233c0000903f000000000000803f0000803f0000803f00000000000000000000c03f0ad7233c0000903f000000000000803f0000803f0000803f0000803f000000003333d33f0ad7233c3333a3bf000000000000803f0000803f00000000000000000000803f3333d3bf0ad7233c3333a3bf000000000000803f0000803f000000000000803f0000803f3333d3bf0ad7233c3333a33f000000000000803f0000803f00000000000000000000803f3333d33f0ad7233c3333a33f000000000000803f0000803f000000000000803f0000803f
+  m_CompressedMesh:
+    m_Vertices:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UV:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Normals:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Tangents:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Weights:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_NormalSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_TangentSigns:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_FloatColors:
+      m_NumItems: 0
+      m_Range: 0
+      m_Start: 0
+      m_Data: 
+      m_BitSize: 0
+    m_BoneIndices:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_Triangles:
+      m_NumItems: 0
+      m_Data: 
+      m_BitSize: 0
+    m_UVInfo: 0
+  m_LocalAABB:
+    m_Center: {x: 0, y: 0.01, z: 0}
+    m_Extent: {x: 1.65, y: 0, z: 1.275}
+  m_MeshUsageFlags: 0
+  m_BakedConvexCollisionMesh: 
+  m_BakedTriangleCollisionMesh: 
+  m_MeshMetrics[0]: 1
+  m_MeshMetrics[1]: 1
+  m_MeshOptimizationFlags: 1
+  m_StreamData:
+    offset: 0
+    size: 0
+    path: 
 --- !u!4 &1345978326 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a82bd376d45051a4eb31747629f3a29a,
@@ -35790,16 +36041,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1491216730}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 75cb3590c277a8240b52db224fe299fe,
-        type: 3}
-      propertyPath: m_Name
-      value: RThumb1
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 75cb3590c277a8240b52db224fe299fe,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 75cb3590c277a8240b52db224fe299fe,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -35853,6 +36094,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 75cb3590c277a8240b52db224fe299fe,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 75cb3590c277a8240b52db224fe299fe,
+        type: 3}
+      propertyPath: m_Name
+      value: RThumb1
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 75cb3590c277a8240b52db224fe299fe,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -36504,6 +36755,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1610763793}
     m_Modifications:
+    - target: {fileID: 1649117884529972476, guid: 1dce86c274896614a8758677a772bdd5,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2676345715001991285, guid: 1dce86c274896614a8758677a772bdd5,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -36557,11 +36813,6 @@ PrefabInstance:
     - target: {fileID: 2676345715001991285, guid: 1dce86c274896614a8758677a772bdd5,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1649117884529972476, guid: 1dce86c274896614a8758677a772bdd5,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5144507683006703324, guid: 1dce86c274896614a8758677a772bdd5,
@@ -37172,7 +37423,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 1a776b1d91177b44283f7d7966b5f5e3, type: 2}
@@ -37204,7 +37455,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7987e4086b86367478c6cf09e63c2532, type: 2}
@@ -37310,7 +37561,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4a0ea737908953d41a8a4f6fecbc73f2, type: 2}
@@ -37613,7 +37864,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 22bb90b881921ae46a229dc8c9923d9c, type: 2}
@@ -37724,7 +37975,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.10289999, z: 0}
+  m_ConnectedAnchor: {x: -0.000000048428774, y: -0.10289999, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -37760,7 +38011,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RTibia_RAnklePitch_joint
+  JointName: RAnklePitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1440416071
@@ -38168,7 +38419,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8bbb44cd52019994597c8892bd4d1c77, type: 2}
@@ -38179,16 +38430,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 68592136}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 478a0dfb262df18458cb065c2b1a14b0,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger23
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 478a0dfb262df18458cb065c2b1a14b0,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 478a0dfb262df18458cb065c2b1a14b0,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38258,6 +38499,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.010000003
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 478a0dfb262df18458cb065c2b1a14b0,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger23
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 478a0dfb262df18458cb065c2b1a14b0,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 478a0dfb262df18458cb065c2b1a14b0, type: 3}
@@ -38370,7 +38621,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 02dd7963db75bda4aa661cf4f81f6453, type: 2}
@@ -38452,6 +38703,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 316465795}
     m_Modifications:
+    - target: {fileID: 906200700451607705, guid: eaf64d611b6e4b54c8848ed5d752590d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1822381045082561584, guid: eaf64d611b6e4b54c8848ed5d752590d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38517,11 +38773,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 906200700451607705, guid: eaf64d611b6e4b54c8848ed5d752590d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 7961165189600109903, guid: eaf64d611b6e4b54c8848ed5d752590d, type: 3}
     - {fileID: 6773346395804979603, guid: eaf64d611b6e4b54c8848ed5d752590d, type: 3}
@@ -38533,6 +38784,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 761305703}
     m_Modifications:
+    - target: {fileID: 4292240482375681232, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
+        type: 3}
+      propertyPath: m_Name
+      value: RShoulderPitch_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 9119742987783864239, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -38587,11 +38843,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292240482375681232, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
-        type: 3}
-      propertyPath: m_Name
-      value: RShoulderPitch_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8189620468177752792, guid: ae3960a1d57d92f4db3044c41e4cfb2d, type: 3}
@@ -39075,7 +39326,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7d6cd8e538b451c469fd34366ca7e958, type: 2}
@@ -39086,11 +39337,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1295820935}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: a287a86bef52ddb499a2a67c9e55b909,
-        type: 3}
-      propertyPath: m_Name
-      value: LShoulderPitch
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: a287a86bef52ddb499a2a67c9e55b909,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -39145,6 +39391,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: a287a86bef52ddb499a2a67c9e55b909,
+        type: 3}
+      propertyPath: m_Name
+      value: LShoulderPitch
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a287a86bef52ddb499a2a67c9e55b909, type: 3}
@@ -39699,7 +39950,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.011569999, y: -0.0030400008, z: 0.06906999}
+  m_ConnectedAnchor: {x: 0.011570014, y: -0.0030400008, z: 0.06906999}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -39735,7 +39986,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: r_wrist_RFinger21_link_joint
+  JointName: RFinger21
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1502310844
@@ -39918,7 +40169,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.000000037252903, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -39954,7 +40205,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RElbow_RForeArm_joint
+  JointName: RElbowRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1507652425
@@ -40139,7 +40390,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5352133fabc278547b2c832d35b77c13, type: 2}
@@ -40201,16 +40452,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2044972711}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: c3648e8294353614ca3f45a7f7362a54,
-        type: 3}
-      propertyPath: m_Name
-      value: HeadYaw
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: c3648e8294353614ca3f45a7f7362a54,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: c3648e8294353614ca3f45a7f7362a54,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40264,6 +40505,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: c3648e8294353614ca3f45a7f7362a54,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c3648e8294353614ca3f45a7f7362a54,
+        type: 3}
+      propertyPath: m_Name
+      value: HeadYaw
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: c3648e8294353614ca3f45a7f7362a54,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -40618,6 +40869,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2127453287}
     m_Modifications:
+    - target: {fileID: 403688273737496933, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger11_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 1982246086248654180, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -40673,11 +40929,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 403688273737496933, guid: 5bf3890fe868ac54bbfb2cdf3db718a2,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger11_0.10
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8838166988218736006, guid: 5bf3890fe868ac54bbfb2cdf3db718a2, type: 3}
     - {fileID: 4605648777526210221, guid: 5bf3890fe868ac54bbfb2cdf3db718a2, type: 3}
@@ -40698,10 +40949,75 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: abbe3c1cc3e73024984ed80b47a200db, type: 2}
+--- !u!1001 &1546525481
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 146900, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_Name
+      value: '[CameraRig]'
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -1.805
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 420908, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2348914, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 1266817078}
+    - target: {fileID: 3380982, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 1344339131}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 4d293c8e162f3874b982baadd71153d2, type: 3}
 --- !u!1001 &1546805682
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -40709,7 +41025,12 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 139456225}
     m_Modifications:
-    - target: {fileID: 9161240770230421863, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
+    - target: {fileID: 4770568604139637553, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger13_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4770568604139637553, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -40784,12 +41105,7 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999999
       objectReference: {fileID: 0}
-    - target: {fileID: 4770568604139637553, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger13_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4770568604139637553, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
+    - target: {fileID: 9161240770230421863, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -41196,7 +41512,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a71a7390df0988b4fb409afa8a631898, type: 2}
@@ -41334,7 +41650,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4c2a830919e55bc49b948521df5a24bd, type: 2}
@@ -41355,6 +41671,7 @@ GameObject:
   - component: {fileID: 1572352849}
   - component: {fileID: 1572352848}
   - component: {fileID: 1572352847}
+  - component: {fileID: 1572352854}
   m_Layer: 0
   m_Name: Neck
   m_TagString: Untagged
@@ -41481,7 +41798,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: torso_Neck_joint
+  JointName: HeadYaw
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1572352852
@@ -41514,6 +41831,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsBaseLink: 0
+--- !u!114 &1572352854
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572352844}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ff0cdacf812548d45a5fc26fca249b8b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1575334187
 GameObject:
   m_ObjectHideFlags: 0
@@ -41939,16 +42268,6 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 8885878215641208817, guid: 6a14619f75445e945beee7bec7bae523,
-        type: 3}
-      propertyPath: m_Name
-      value: LShoulderRoll_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 8885878215641208817, guid: 6a14619f75445e945beee7bec7bae523,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5991659553402748842, guid: 6a14619f75445e945beee7bec7bae523,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -42002,6 +42321,16 @@ PrefabInstance:
     - target: {fileID: 5991659553402748842, guid: 6a14619f75445e945beee7bec7bae523,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885878215641208817, guid: 6a14619f75445e945beee7bec7bae523,
+        type: 3}
+      propertyPath: m_Name
+      value: LShoulderRoll_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8885878215641208817, guid: 6a14619f75445e945beee7bec7bae523,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -42074,7 +42403,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d93ee113508b9e5448498dde3afc3d5a, type: 2}
@@ -43033,16 +43362,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 985582081}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 96ca3202e2b935d4684104b04f6553e1,
-        type: 3}
-      propertyPath: m_Name
-      value: LHipYawPitch
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 96ca3202e2b935d4684104b04f6553e1,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 96ca3202e2b935d4684104b04f6553e1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -43096,6 +43415,16 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 96ca3202e2b935d4684104b04f6553e1,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 96ca3202e2b935d4684104b04f6553e1,
+        type: 3}
+      propertyPath: m_Name
+      value: LHipYawPitch
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 96ca3202e2b935d4684104b04f6553e1,
+        type: 3}
+      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
@@ -43888,7 +44217,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: d12b8ab77943b7242930e37c4b443514, type: 2}
@@ -44027,7 +44356,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 8300735d48c02a2498caa9310f7679e5, type: 2}
@@ -44996,6 +45325,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 120544819}
     m_Modifications:
+    - target: {fileID: 4058007714551498602, guid: fa27949f769792d458cd24fb4f78835e,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger21_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4058007714551498602, guid: fa27949f769792d458cd24fb4f78835e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7564597445927836526, guid: fa27949f769792d458cd24fb4f78835e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 7733997407218817018, guid: fa27949f769792d458cd24fb4f78835e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -45049,21 +45393,6 @@ PrefabInstance:
     - target: {fileID: 7733997407218817018, guid: fa27949f769792d458cd24fb4f78835e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058007714551498602, guid: fa27949f769792d458cd24fb4f78835e,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger21_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4058007714551498602, guid: fa27949f769792d458cd24fb4f78835e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7564597445927836526, guid: fa27949f769792d458cd24fb4f78835e,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -45371,7 +45700,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.000000048428774, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -45407,7 +45736,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LHip_LThigh_joint
+  JointName: LHipPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1722839101
@@ -46116,7 +46445,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 7d6cd8e538b451c469fd34366ca7e958, type: 2}
@@ -46264,6 +46593,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1803461231}
     m_Modifications:
+    - target: {fileID: 2841465869949728153, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger13_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 3273496545330697301, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -46333,11 +46667,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 2841465869949728153, guid: d81f941c57ed7ca4ea4b95e6a39709a4,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger13_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 5305311631398811207, guid: d81f941c57ed7ca4ea4b95e6a39709a4, type: 3}
@@ -46752,7 +47081,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 22bb90b881921ae46a229dc8c9923d9c, type: 2}
@@ -46772,7 +47101,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 89f46016e05399341b4d755ddc54c57d, type: 2}
@@ -47431,7 +47760,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4c2a830919e55bc49b948521df5a24bd, type: 2}
@@ -49614,6 +49943,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 464534837}
     m_Modifications:
+    - target: {fileID: 8062487886244163841, guid: cea1475955629bd4b856a2d8cb7a9bb9,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger22_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 8527524492943061623, guid: cea1475955629bd4b856a2d8cb7a9bb9,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -49684,98 +50018,10 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.9999999
       objectReference: {fileID: 0}
-    - target: {fileID: 8062487886244163841, guid: cea1475955629bd4b856a2d8cb7a9bb9,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger22_0.10
-      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 6727724163151847865, guid: cea1475955629bd4b856a2d8cb7a9bb9, type: 3}
     - {fileID: 8756009808136108695, guid: cea1475955629bd4b856a2d8cb7a9bb9, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: cea1475955629bd4b856a2d8cb7a9bb9, type: 3}
---- !u!1 &1835033826
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1835033829}
-  - component: {fileID: 1835033828}
-  - component: {fileID: 1835033827}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &1835033827
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835033826}
-  m_Enabled: 1
---- !u!20 &1835033828
-Camera:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835033826}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_projectionMatrixMode: 1
-  m_GateFitMode: 2
-  m_FOVAxisMode: 0
-  m_SensorSize: {x: 36, y: 24}
-  m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 0
-  orthographic size: 5
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 0
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &1835033829
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1835033826}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.073, z: -0.811}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1835585533
 GameObject:
   m_ObjectHideFlags: 8
@@ -50362,6 +50608,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 855068136}
     m_Modifications:
+    - target: {fileID: 4547652217194253834, guid: ab224cfda41d2d84aa9738c50196cfe4,
+        type: 3}
+      propertyPath: m_Name
+      value: LFinger23_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 4562003230177713162, guid: ab224cfda41d2d84aa9738c50196cfe4,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -50431,11 +50682,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999996
-      objectReference: {fileID: 0}
-    - target: {fileID: 4547652217194253834, guid: ab224cfda41d2d84aa9738c50196cfe4,
-        type: 3}
-      propertyPath: m_Name
-      value: LFinger23_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4622874940472786814, guid: ab224cfda41d2d84aa9738c50196cfe4, type: 3}
@@ -50728,7 +50974,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: 0.000000048428774, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -50764,7 +51010,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LAnklePitch_l_ankle_joint
+  JointName: LAnkleRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1879530796
@@ -50804,6 +51050,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 130353153}
     m_Modifications:
+    - target: {fileID: 2152799098638412123, guid: a3ab9850586b33943917527955a7d706,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3949678958581003500, guid: a3ab9850586b33943917527955a7d706,
         type: 3}
       propertyPath: m_Name
@@ -50867,11 +51118,6 @@ PrefabInstance:
     - target: {fileID: 6102227232085153417, guid: a3ab9850586b33943917527955a7d706,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2152799098638412123, guid: a3ab9850586b33943917527955a7d706,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -51015,7 +51261,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: -0.026380002, z: 0.04895}
+  m_ConnectedAnchor: {x: -0.000000037252903, y: -0.026380002, z: 0.04895}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -51051,7 +51297,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: l_wrist_LThumb1_link_joint
+  JointName: LThumb1
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1884869397
@@ -51191,7 +51437,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0.707106, y: -0.707106, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.05, y: -0.085, z: 0}
+  m_ConnectedAnchor: {x: -0.049999952, y: -0.085, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -51227,7 +51473,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: torso_LPelvis_joint
+  JointName: LHipYawPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1886652817
@@ -51455,7 +51701,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000037252903, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -51491,7 +51737,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LElbow_LForeArm_joint
+  JointName: LElbowRoll
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1894770995
@@ -53690,7 +53936,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.011569999, y: -0.0030400008, z: 0.06906999}
+  m_ConnectedAnchor: {x: 0.011570059, y: -0.0030400008, z: 0.06906999}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -53721,12 +53967,12 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1934227174}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: l_wrist_LFinger21_link_joint
+  JointName: LFinger21
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1934227181
@@ -54017,11 +54263,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 824881917}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: cb0072a6f8f46964b8bdbb3a42320974,
-        type: 3}
-      propertyPath: m_Name
-      value: RHipRoll
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: cb0072a6f8f46964b8bdbb3a42320974,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54076,6 +54317,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: cb0072a6f8f46964b8bdbb3a42320974,
+        type: 3}
+      propertyPath: m_Name
+      value: RHipRoll
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb0072a6f8f46964b8bdbb3a42320974, type: 3}
@@ -54212,7 +54458,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0b71b861eb5954a4e872e90122609beb, type: 2}
@@ -54238,7 +54484,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 5352133fabc278547b2c832d35b77c13, type: 2}
@@ -54299,6 +54545,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1385041749}
     m_Modifications:
+    - target: {fileID: 4736273143382418928, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
+        type: 3}
+      propertyPath: m_Name
+      value: RWristYaw_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 5432761672954252560, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -54353,11 +54604,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4736273143382418928, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8,
-        type: 3}
-      propertyPath: m_Name
-      value: RWristYaw_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8744220517689367645, guid: dd8354e50fd15ed4ab70d3f8ec3c8ad8, type: 3}
@@ -54664,10 +54910,30 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: a842ff390a8407746ae03f095c6037c5, type: 2}
+--- !u!1 &1978505531 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1000014254142504, guid: 4d293c8e162f3874b982baadd71153d2,
+    type: 3}
+  m_PrefabInstance: {fileID: 1546525481}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1978505535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1978505531}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35db29d12e718824e8218d916e296dc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pitch: {fileID: 864369010}
+  yaw: {fileID: 1572352844}
 --- !u!1 &1982886005
 GameObject:
   m_ObjectHideFlags: 0
@@ -55188,7 +55454,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.000000016298145, y: -0.000000006699305, z: 0.014360005}
+  m_ConnectedAnchor: {x: 0.000000011641532, y: -0.00000006630395, z: 0.014360014}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -55224,7 +55490,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: LFinger12_link_LFinger13_link_joint
+  JointName: LFinger13
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1989922122
@@ -55479,7 +55745,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 0, z: 1}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0.05595001}
+  m_ConnectedAnchor: {x: 0.000000037252903, y: 0, z: 0.05595001}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -55515,7 +55781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RForeArm_r_wrist_joint
+  JointName: RWristYaw
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &1999223829
@@ -55837,11 +56103,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1761087346}
     m_Modifications:
-    - target: {fileID: 5676602395886950794, guid: 8fc184837ac7d2446bdd51426fa65187,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 1999632491869949069, guid: 8fc184837ac7d2446bdd51426fa65187,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -55903,6 +56164,11 @@ PrefabInstance:
       value: LHipRoll_0.10
       objectReference: {fileID: 0}
     - target: {fileID: 4034061066766661281, guid: 8fc184837ac7d2446bdd51426fa65187,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5676602395886950794, guid: 8fc184837ac7d2446bdd51426fa65187,
         type: 3}
       propertyPath: m_Layer
       value: 0
@@ -56217,7 +56483,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -1, y: 0, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
+  m_ConnectedAnchor: {x: -0.000000048428774, y: 0, z: 0}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -56253,7 +56519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63b6193734b4c8444bcfdf4e9953fe2b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RHip_RThigh_joint
+  JointName: RHipPitch
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &2017427558
@@ -56302,7 +56568,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4494bfe181cf09b41aa138606d444a8f, type: 2}
@@ -56890,6 +57156,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 50420255}
     m_Modifications:
+    - target: {fileID: 151308162462814753, guid: 379a7147a8891c74fbb818be82d6150e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2822826778723623307, guid: 379a7147a8891c74fbb818be82d6150e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -56943,11 +57214,6 @@ PrefabInstance:
     - target: {fileID: 2822826778723623307, guid: 379a7147a8891c74fbb818be82d6150e,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 151308162462814753, guid: 379a7147a8891c74fbb818be82d6150e,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4354362706136490467, guid: 379a7147a8891c74fbb818be82d6150e,
@@ -57665,7 +57931,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 294b9935b272441489ebcb700d8e52c3, type: 2}
@@ -57982,6 +58248,11 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2069955222642911456, guid: 6d6ac1ddb9c7c344e8de37e61712d980,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4668072079622378649, guid: 6d6ac1ddb9c7c344e8de37e61712d980,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58035,11 +58306,6 @@ PrefabInstance:
     - target: {fileID: 4668072079622378649, guid: 6d6ac1ddb9c7c344e8de37e61712d980,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2069955222642911456, guid: 6d6ac1ddb9c7c344e8de37e61712d980,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -58225,7 +58491,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 0b71b861eb5954a4e872e90122609beb, type: 2}
@@ -58236,6 +58502,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2073215228}
     m_Modifications:
+    - target: {fileID: 4292240482375681232, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
+        type: 3}
+      propertyPath: m_Name
+      value: RShoulderPitch_0.10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4292240482375681232, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9104854760089260405, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9119742987783864239, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58289,21 +58570,6 @@ PrefabInstance:
     - target: {fileID: 9119742987783864239, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 9104854760089260405, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292240482375681232, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
-        type: 3}
-      propertyPath: m_Name
-      value: RShoulderPitch_0.10
-      objectReference: {fileID: 0}
-    - target: {fileID: 4292240482375681232, guid: ae3960a1d57d92f4db3044c41e4cfb2d,
-        type: 3}
-      propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents:
@@ -58724,6 +58990,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 254264365}
     m_Modifications:
+    - target: {fileID: 4770568604139637553, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger13_0.10
+      objectReference: {fileID: 0}
     - target: {fileID: 7668406924882232433, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -58793,11 +59064,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.9999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 4770568604139637553, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger13_0.10
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 8343518322600618042, guid: 83cea6630f3f28c4e8e8a9d3fb8c1227, type: 3}
@@ -58900,7 +59166,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0.0000000048894435, y: -0.0000000037252903, z: 0.014360002}
+  m_ConnectedAnchor: {x: 6.9849193e-10, y: -0.000000048428774, z: 0.014359996}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -58936,7 +59202,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: RFinger21_link_RFinger22_link_joint
+  JointName: RFinger22
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &2120066254
@@ -58985,7 +59251,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: e3f5b8d7404963845b004e50401a7cb0, type: 2}
@@ -59399,16 +59665,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 281054264}
     m_Modifications:
-    - target: {fileID: -927199367670048503, guid: 1db4103e7699d6845b19f82a9cd1370e,
-        type: 3}
-      propertyPath: m_Name
-      value: RFinger12
-      objectReference: {fileID: 0}
-    - target: {fileID: -927199367670048503, guid: 1db4103e7699d6845b19f82a9cd1370e,
-        type: 3}
-      propertyPath: m_Layer
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 1db4103e7699d6845b19f82a9cd1370e,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -59478,6 +59734,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalScale.z
       value: 0.009999999
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1db4103e7699d6845b19f82a9cd1370e,
+        type: 3}
+      propertyPath: m_Name
+      value: RFinger12
+      objectReference: {fileID: 0}
+    - target: {fileID: -927199367670048503, guid: 1db4103e7699d6845b19f82a9cd1370e,
+        type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 1db4103e7699d6845b19f82a9cd1370e, type: 3}
@@ -59672,7 +59938,7 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 4
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 4300000, guid: 4494bfe181cf09b41aa138606d444a8f, type: 2}
@@ -59980,7 +60246,7 @@ HingeJoint:
   m_Anchor: {x: 0, y: 0, z: 0}
   m_Axis: {x: -0, y: 1, z: 0}
   m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: -0.011569999, y: -0.0030400008, z: 0.06906999}
+  m_ConnectedAnchor: {x: -0.011570059, y: -0.0030400008, z: 0.06906999}
   m_UseSpring: 0
   m_Spring:
     spring: 0
@@ -60016,7 +60282,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b6e27abb4aa1a64bbcf79a845601047, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JointName: r_wrist_RFinger11_link_joint
+  JointName: RFinger11
   EffortLimit: 1000
   VelocityLimit: 1000
 --- !u!114 &2146911577

@@ -17,12 +17,12 @@ using System.Collections.Generic;
 
 namespace RosSharp.RosBridgeClient
 {
-    public class JointStatePublisher : Publisher<Messages.Sensor.JointState>
+    public class JointStatePublisher : Publisher<Messages.DennisMessage>
     {
         public List<JointStateReader> JointStateReaders;
         public string FrameId = "Unity";
 
-        private Messages.Sensor.JointState message;    
+        private Messages.DennisMessage message;    
         
         protected override void Start()
         {
@@ -38,13 +38,12 @@ namespace RosSharp.RosBridgeClient
         private void InitializeMessage()
         {
             int jointStateLength = JointStateReaders.Count;
-            message = new Messages.Sensor.JointState
+            message = new Messages.DennisMessage
             {
                 header = new Messages.Standard.Header { frame_id = FrameId },
-                name = new string[jointStateLength],
-                position = new double[jointStateLength],
-                velocity = new double[jointStateLength],
-                effort = new double[jointStateLength]
+                joint_names = new string[jointStateLength],
+                joint_angles = new float[jointStateLength],
+                speed = 0.0f
             };
         }
 
@@ -61,14 +60,13 @@ namespace RosSharp.RosBridgeClient
         {
 
             JointStateReaders[i].Read(
-                out message.name[i],
+                out message.joint_names[i],
                 out float position,
                 out float velocity,
                 out float effort);
 
-            message.position[i] = position;
-            message.velocity[i] = velocity;
-            message.effort[i] = effort;
+            message.joint_angles[i] = position;
+            message.speed = 0.2f;
         }
 
 
