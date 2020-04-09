@@ -13,7 +13,6 @@ namespace RosSharp.RosBridgeClient.Services
 
         public disableStiffnessRequest()
         {
-
         }
     }
     public class disableStiffnessResponse : Message

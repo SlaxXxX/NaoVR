@@ -1,6 +1,4 @@
 ﻿using RosSharp.RosBridgeClient;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class RotationTestScript : MonoBehaviour
