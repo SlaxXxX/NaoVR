@@ -6,12 +6,13 @@ using UnityEditor;
 using UnityEngine;
 using Valve.VR;
 
-public class NaoIK : MonoBehaviour
+public class NaoIK : CalibrationListener
 {
     private SteamVR_Action_Boolean checkConstraints;
 
+
     public GameObject SegmentPrefab;
-    public bool Calibrated = false, AlwaysCheckConstraints = false;
+    public bool IsCalibrated = false, AlwaysCheckConstraints = false, SendJoints = false, DrawDebugText = true;
     private GameObject[] nodeInstances, segmentInstances;
     private List<List<GameObject>> hookedNodeChains = new List<List<GameObject>>();
 
@@ -21,6 +22,8 @@ public class NaoIK : MonoBehaviour
 
     void Start()
     {
+        Register();
+
         checkConstraints = SteamVR_Actions._default.GrabPinch;
 
         minStep = acceptableDistance / 10;
@@ -40,6 +43,8 @@ public class NaoIK : MonoBehaviour
                 {
                     nodeChain.Add(nodeChain.Last().GetComponent<NodeData>().Parent);
                 }
+                //Remove shoulderbase
+                nodeChain.RemoveAt(nodeChain.Count - 1);
                 hookedNodeChains.Add(nodeChain);
             }
             if (nodeData[i].Parent != null)
@@ -56,20 +61,15 @@ public class NaoIK : MonoBehaviour
 
     void Update()
     {
-        if (Calibrated)
+        if (IsCalibrated)
         {
             hookedNodeChains.ForEach(ApplyFabrIK);
-            if (AlwaysCheckConstraints || checkConstraints.GetStateDown(SteamVR_Input_Sources.Any))
+            if (false && (AlwaysCheckConstraints || checkConstraints.GetStateDown(SteamVR_Input_Sources.Any)))
                 hookedNodeChains.ForEach(ApplyConstraints);
+            if (SendJoints)
+                hookedNodeChains.ForEach(SendJointAngles);
             UpdateSegments();
         }
-        /*
-         * Set hooked object
-         * Set next link
-         * Apply FabrIK
-         * Check constraints
-         * Donezo
-         */
     }
 
     void ApplyFabrIK(List<GameObject> nodes)
@@ -90,6 +90,7 @@ public class NaoIK : MonoBehaviour
             cycle++;
         } while (cycle < maxIterations
             && (Vector3.Distance(effector.transform.position, startPos)) > acceptableDistance);
+        RotateNodesCorrectly(nodes);
     }
 
     void DoFabrIKCycle(List<GameObject> nodes)
@@ -110,6 +111,58 @@ public class NaoIK : MonoBehaviour
             Vector3 last = nodes[i - delta].transform.position;
             nodes[i].transform.position = last + (nodes[i].transform.position - last).normalized * distance;
             //ApplyConstraints(nodes[i], nodes[i - delta]);
+        }
+    }
+
+    void RotateNodesCorrectly(List<GameObject> nodes)
+    {
+        for (int i = nodes.Count - 1; i >= 0; i--)
+        {
+
+            NodeData nodeData = nodes[i].GetComponent<NodeData>();
+
+            GameObject parent = nodeData.Parent;
+            GameObject current = nodes[i];
+            GameObject child = i > 0 ? nodes[i - 1] : null;
+
+            Vector3 parentForward = parent.transform.TransformDirection(Vector3.forward);
+            Vector3 parentUp = parent.transform.TransformDirection(Vector3.up);
+
+            float roll = 0, pitch = 0;
+            if (child != null)
+            {
+
+                Vector3 childDirection = (child.transform.position - current.transform.position).normalized;
+
+                current.transform.rotation = parent.transform.rotation;
+
+                roll = parentUp.GetAngleOnAxis(childDirection, parentForward);
+                current.transform.Rotate(Vector3.forward, roll);
+
+                pitch = parentForward.GetAngleOnAxis(childDirection, current.transform.TransformDirection(Vector3.right));
+                current.transform.Rotate(Vector3.right, pitch);
+
+            }
+            else
+            {
+                //special case for wrists
+                roll = parentUp.GetAngleOnAxis(current.transform.up, parentForward);
+            }
+
+            nodeData.SetRotationRaw(pitch, roll);
+
+            if (DrawDebugText && nodeData.DebugText != null)
+            {
+                nodeData.DebugText.text = $"Pitch: {pitch.ToString("F1")}\nRoll: {roll.ToString("F1")}";
+            }
+        }
+    }
+
+    void SendJointAngles(List<GameObject> nodes)
+    {
+        for (int i = nodes.Count - 1; i >= 0; i--)
+        {
+            nodes[i].GetComponent<NodeData>().WriteJointData(i > 0 ? nodes[i - 1] : null);
         }
     }
 
@@ -211,5 +264,10 @@ public class NaoIK : MonoBehaviour
             segment.transform.position = data.StartNode.transform.position;
             segment.transform.rotation = Quaternion.LookRotation(data.EndNode.transform.position - data.StartNode.transform.position);
         }
+    }
+
+    public override void Calibrated()
+    {
+        IsCalibrated = true;
     }
 }

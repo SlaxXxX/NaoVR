@@ -2,7 +2,7 @@
 using NaoApi.Stiffness;
 using UnityEngine;
 
-public class PitchYawTransmitter : MonoBehaviour
+public class PitchYawTransmitter : CalibrationListener
 {
     private bool isActive = false;
     public GameObject pitch, yaw;
@@ -10,6 +10,8 @@ public class PitchYawTransmitter : MonoBehaviour
 
     void Start()
     {
+        Register();
+
         yawWriter = yaw.GetComponent<JointStateWriter>();
         if (yawWriter == null)
             Debug.Log("No Writer Component found in Module " + transform.parent.name);
@@ -20,19 +22,15 @@ public class PitchYawTransmitter : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
-        {
-            isActive = !isActive;
-        }
         if (isActive)
         {
-            WriteValue("Yaw", yawWriter, transform.rotation.y);
-            WriteValue("Pitch", pitchWriter, transform.rotation.x);
+            yawWriter?.Write(transform.eulerAngles.y * Mathf.Deg2Rad);
+            pitchWriter?.Write(transform.eulerAngles.x * Mathf.Deg2Rad);
         }
     }
-    void WriteValue(string name, JointStateWriter writer, float value)
+
+    public override void Calibrated()
     {
-        writer?.Write(value);
-        //Debug.Log(name + " rotated to " + value);
+        isActive = true;
     }
 }

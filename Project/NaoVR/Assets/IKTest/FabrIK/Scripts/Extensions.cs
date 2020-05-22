@@ -21,5 +21,12 @@ namespace Assets.IKTest.FabrIK.Scripts
         {
             return new Vector3(vector.x, vector.y, 0);
         }
+
+        public static float GetAngleOnAxis(this Vector3 self, Vector3 other, Vector3 axis)
+        {
+            Vector3 perpendicularSelf = Vector3.Cross(axis, self);
+            Vector3 perpendicularOther = Vector3.Cross(axis, other);
+            return Vector3.SignedAngle(perpendicularSelf, perpendicularOther, axis);
+        }
     }
 }
