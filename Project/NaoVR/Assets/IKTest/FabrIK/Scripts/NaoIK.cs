@@ -1,4 +1,5 @@
 ﻿using Assets.IKTest.FabrIK.Scripts;
+using NaoApi.Stiffness;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -13,6 +14,9 @@ public class NaoIK : CalibrationListener
 
     public GameObject SegmentPrefab;
     public bool IsCalibrated = false, AlwaysCheckConstraints = false, SendJoints = false, DrawDebugText = true;
+    public StiffnessController stiffnessController;
+
+    private bool isArmed = false;
     private GameObject[] nodeInstances, segmentInstances;
     private List<List<GameObject>> hookedNodeChains = new List<List<GameObject>>();
 
@@ -66,10 +70,15 @@ public class NaoIK : CalibrationListener
             hookedNodeChains.ForEach(ApplyFabrIK);
             if (false && (AlwaysCheckConstraints || checkConstraints.GetStateDown(SteamVR_Input_Sources.Any)))
                 hookedNodeChains.ForEach(ApplyConstraints);
-            if (SendJoints)
+            if (SendJoints && isArmed)
                 hookedNodeChains.ForEach(SendJointAngles);
             UpdateSegments();
         }
+    }
+
+    private void OnApplicationQuit()
+    {
+        stiffnessController.disableStiffness();
     }
 
     void ApplyFabrIK(List<GameObject> nodes)
@@ -269,5 +278,12 @@ public class NaoIK : CalibrationListener
     public override void Calibrated()
     {
         IsCalibrated = true;
+    }
+
+    public override void SetArmed(bool isArmed)
+    {
+        this.isArmed = isArmed;
+        if (!isArmed)
+            stiffnessController.wakeup();
     }
 }

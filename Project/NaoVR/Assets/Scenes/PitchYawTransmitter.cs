@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PitchYawTransmitter : CalibrationListener
 {
-    private bool isActive = false;
+    private bool isActive = false, isArmed = false;
     public GameObject pitch, yaw;
     private JointStateWriter yawWriter, pitchWriter;
 
@@ -22,9 +22,9 @@ public class PitchYawTransmitter : CalibrationListener
     }
     void Update()
     {
-        if (isActive)
+        if (isActive && isArmed)
         {
-            yawWriter?.Write(transform.eulerAngles.y * Mathf.Deg2Rad);
+            yawWriter?.Write(-transform.eulerAngles.y * Mathf.Deg2Rad);
             pitchWriter?.Write(transform.eulerAngles.x * Mathf.Deg2Rad);
         }
     }
@@ -32,5 +32,10 @@ public class PitchYawTransmitter : CalibrationListener
     public override void Calibrated()
     {
         isActive = true;
+    }
+
+    public override void SetArmed(bool isArmed)
+    {
+        this.isArmed = isArmed;
     }
 }

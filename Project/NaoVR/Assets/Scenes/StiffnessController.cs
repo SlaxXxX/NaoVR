@@ -4,11 +4,12 @@ using RosSharp.RosBridgeClient.Services;
 
 namespace NaoApi.Stiffness
 {
-    public class StiffnessControler : MonoBehaviour
+    public class StiffnessController : MonoBehaviour
     {
         private RosSocket socket;
         public bool stiffness;
         //private Speech.SpeechControler speech;
+
         void Start()
         {
             GameObject Connector = GameObject.FindWithTag("Connector");
@@ -29,6 +30,7 @@ namespace NaoApi.Stiffness
                 }
             }
         }
+
         //requert only for references
         private static void ServiceCallHandler(disableStiffnessResponse message){}
         //requert only for references

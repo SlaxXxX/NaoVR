@@ -41,4 +41,8 @@ public class GrabManager : CalibrationListener
     {
         isActive = true;
     }
+
+    public override void SetArmed(bool isArmed)
+    {
+    }
 }
