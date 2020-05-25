@@ -4,9 +4,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-public class GrabManager : CalibrationListener
+public class GrabManager : StateListener
 {
-    private bool isActive = false;
     public GameObject leftHand, rightHand;
     private JointStateWriter leftWriter, rightWriter;
 
@@ -29,20 +28,11 @@ public class GrabManager : CalibrationListener
 
     void Update()
     {
-        if (isActive)
+        if (state == StateManager.State.armed)
         {
             //57° is a closed hand
             leftWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.LeftHand) * 57);
             rightWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.RightHand) * 57);
         }
-    }
-
-    public override void Calibrated()
-    {
-        isActive = true;
-    }
-
-    public override void SetArmed(bool isArmed)
-    {
     }
 }

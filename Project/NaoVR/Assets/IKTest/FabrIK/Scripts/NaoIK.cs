@@ -7,16 +7,15 @@ using UnityEditor;
 using UnityEngine;
 using Valve.VR;
 
-public class NaoIK : CalibrationListener
+public class NaoIK : StateListener
 {
     private SteamVR_Action_Boolean checkConstraints;
 
 
     public GameObject SegmentPrefab;
-    public bool IsCalibrated = false, AlwaysCheckConstraints = false, SendJoints = false, DrawDebugText = true;
+    public bool AlwaysCheckConstraints = false, SendJoints = false, RenderDebug = false;
     public StiffnessController stiffnessController;
 
-    private bool isArmed = false;
     private GameObject[] nodeInstances, segmentInstances;
     private List<List<GameObject>> hookedNodeChains = new List<List<GameObject>>();
 
@@ -39,6 +38,8 @@ public class NaoIK : CalibrationListener
         for (int i = 0; i < nodeData.Length; i++)
         {
             nodeInstances[i] = nodeData[i].gameObject;
+            if (!RenderDebug)
+                nodeInstances[i].GetComponent<MeshRenderer>().enabled = false;
             if (nodeInstances[i].TryGetComponent<IKHook>(out _))
             {
                 List<GameObject> nodeChain = new List<GameObject>();
@@ -47,13 +48,13 @@ public class NaoIK : CalibrationListener
                 {
                     nodeChain.Add(nodeChain.Last().GetComponent<NodeData>().Parent);
                 }
-                //Remove shoulderbase
+                //Remove shoulderbase, it is just for initially orienting the shoulder to calculate angles
                 nodeChain.RemoveAt(nodeChain.Count - 1);
                 hookedNodeChains.Add(nodeChain);
             }
-            if (nodeData[i].Parent != null)
+            if (RenderDebug && nodeData[i].Parent != null)
             {
-                segmentInstances[i] = Instantiate(SegmentPrefab, new Vector3(0, 0, 0), Quaternion.identity);
+                segmentInstances[i] = Instantiate(SegmentPrefab, new Vector3(0, 0, 0), Quaternion.identity, gameObject.transform);
                 SegmentData data = segmentInstances[i].GetComponent<SegmentData>();
                 data.StartNode = nodeData[i].Parent;
                 data.EndNode = nodeData[i].gameObject;
@@ -65,12 +66,12 @@ public class NaoIK : CalibrationListener
 
     void Update()
     {
-        if (IsCalibrated)
+        if (state >= StateManager.State.calibrated)
         {
             hookedNodeChains.ForEach(ApplyFabrIK);
             if (false && (AlwaysCheckConstraints || checkConstraints.GetStateDown(SteamVR_Input_Sources.Any)))
                 hookedNodeChains.ForEach(ApplyConstraints);
-            if (SendJoints && isArmed)
+            if (SendJoints && state == StateManager.State.armed)
                 hookedNodeChains.ForEach(SendJointAngles);
             UpdateSegments();
         }
@@ -160,7 +161,7 @@ public class NaoIK : CalibrationListener
 
             nodeData.SetRotationRaw(pitch, roll);
 
-            if (DrawDebugText && nodeData.DebugText != null)
+            if (RenderDebug && nodeData.DebugText != null)
             {
                 nodeData.DebugText.text = $"Pitch: {pitch.ToString("F1")}\nRoll: {roll.ToString("F1")}";
             }
@@ -265,6 +266,8 @@ public class NaoIK : CalibrationListener
 
     void UpdateSegments()
     {
+        if (!RenderDebug)
+            return;
         foreach (GameObject segment in segmentInstances)
         {
             if (segment == null)
@@ -273,17 +276,5 @@ public class NaoIK : CalibrationListener
             segment.transform.position = data.StartNode.transform.position;
             segment.transform.rotation = Quaternion.LookRotation(data.EndNode.transform.position - data.StartNode.transform.position);
         }
-    }
-
-    public override void Calibrated()
-    {
-        IsCalibrated = true;
-    }
-
-    public override void SetArmed(bool isArmed)
-    {
-        this.isArmed = isArmed;
-        if (!isArmed)
-            stiffnessController.wakeup();
     }
 }

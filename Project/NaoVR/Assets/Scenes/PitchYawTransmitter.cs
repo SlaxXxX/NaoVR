@@ -2,9 +2,8 @@
 using NaoApi.Stiffness;
 using UnityEngine;
 
-public class PitchYawTransmitter : CalibrationListener
+public class PitchYawTransmitter : StateListener
 {
-    private bool isActive = false, isArmed = false;
     public GameObject pitch, yaw;
     private JointStateWriter yawWriter, pitchWriter;
 
@@ -22,20 +21,10 @@ public class PitchYawTransmitter : CalibrationListener
     }
     void Update()
     {
-        if (isActive && isArmed)
+        if (state == StateManager.State.armed)
         {
             yawWriter?.Write(-transform.eulerAngles.y * Mathf.Deg2Rad);
             pitchWriter?.Write(transform.eulerAngles.x * Mathf.Deg2Rad);
         }
-    }
-
-    public override void Calibrated()
-    {
-        isActive = true;
-    }
-
-    public override void SetArmed(bool isArmed)
-    {
-        this.isArmed = isArmed;
     }
 }
