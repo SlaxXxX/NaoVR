@@ -17,38 +17,6 @@ namespace Valve.VR
     public class SteamVR_Input_ActionSet_default : Valve.VR.SteamVR_ActionSet
     {
         
-        public virtual SteamVR_Action_Boolean InteractUI
-        {
-            get
-            {
-                return SteamVR_Actions.default_InteractUI;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean Teleport
-        {
-            get
-            {
-                return SteamVR_Actions.default_Teleport;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean GrabPinch
-        {
-            get
-            {
-                return SteamVR_Actions.default_GrabPinch;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean GrabGrip
-        {
-            get
-            {
-                return SteamVR_Actions.default_GrabGrip;
-            }
-        }
-        
         public virtual SteamVR_Action_Pose Pose
         {
             get
@@ -73,11 +41,11 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Single Squeeze
+        public virtual SteamVR_Action_Single CloseHand
         {
             get
             {
-                return SteamVR_Actions.default_Squeeze;
+                return SteamVR_Actions.default_CloseHand;
             }
         }
         
@@ -89,22 +57,6 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean SnapTurnLeft
-        {
-            get
-            {
-                return SteamVR_Actions.default_SnapTurnLeft;
-            }
-        }
-        
-        public virtual SteamVR_Action_Boolean SnapTurnRight
-        {
-            get
-            {
-                return SteamVR_Actions.default_SnapTurnRight;
-            }
-        }
-        
         public virtual SteamVR_Action_Boolean Calibrate
         {
             get
@@ -113,11 +65,51 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean Arm
+        public virtual SteamVR_Action_Boolean ArmDisarm
         {
             get
             {
-                return SteamVR_Actions.default_Arm;
+                return SteamVR_Actions.default_ArmDisarm;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean WalkForward
+        {
+            get
+            {
+                return SteamVR_Actions.default_WalkForward;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean WalkBackward
+        {
+            get
+            {
+                return SteamVR_Actions.default_WalkBackward;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean TurnLeft
+        {
+            get
+            {
+                return SteamVR_Actions.default_TurnLeft;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean TurnRight
+        {
+            get
+            {
+                return SteamVR_Actions.default_TurnRight;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean CrouchStand
+        {
+            get
+            {
+                return SteamVR_Actions.default_CrouchStand;
             }
         }
         

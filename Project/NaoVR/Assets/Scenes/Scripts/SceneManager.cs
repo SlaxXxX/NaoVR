@@ -1,14 +1,16 @@
-﻿using System.Collections;
+﻿using RosSharp.RosBridgeClient;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Valve.VR;
 
-public class UIManager : StateListener
+public class SceneManager : StateListener
 {
     public Text InfoText, StatusText;
     public GameObject InfoCanvas, FloorMarker, LeftGripMarker, RightGripMarker, LeftHandMarker, RightHandMarker, ArmedContainer, Nao;
     public SteamVR_RenderModel LeftModel, RightModel;
+    public JointStatePublisher publisher;
     void Start()
     {
         Register();
@@ -30,6 +32,8 @@ public class UIManager : StateListener
                 StatusText.color = Color.green;
 
                 Nao.SetActive(true);
+                LeftModel.SetMeshRendererState(false);
+                RightModel.SetMeshRendererState(false);
 
                 RightGripMarker.SetActive(false);
                 LeftGripMarker.SetActive(true);
@@ -40,9 +44,7 @@ public class UIManager : StateListener
             case StateManager.State.disarmed:
                 StatusText.text = "Disarmed";
                 StatusText.color = new Color(1, 0.5f, 0.2f);
-
-                LeftModel.SetMeshRendererState(true);
-                RightModel.SetMeshRendererState(true);
+                publisher.DoPublish = false;
 
                 ArmedContainer.SetActive(false);
                 RightGripMarker.SetActive(false);
@@ -54,9 +56,7 @@ public class UIManager : StateListener
                 InfoCanvas.SetActive(false);
                 StatusText.text = "Armed";
                 StatusText.color = Color.red;
-
-                LeftModel.SetMeshRendererState(false);
-                RightModel.SetMeshRendererState(false);
+                publisher.DoPublish = true;
 
                 ArmedContainer.SetActive(true);
                 LeftGripMarker.SetActive(false);

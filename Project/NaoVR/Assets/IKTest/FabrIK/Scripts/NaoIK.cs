@@ -9,9 +9,6 @@ using Valve.VR;
 
 public class NaoIK : StateListener
 {
-    private SteamVR_Action_Boolean checkConstraints;
-
-
     public GameObject SegmentPrefab;
     public bool AlwaysCheckConstraints = false, SendJoints = false, RenderDebug = false;
     public StiffnessController stiffnessController;
@@ -26,9 +23,6 @@ public class NaoIK : StateListener
     void Start()
     {
         Register();
-
-        checkConstraints = SteamVR_Actions._default.GrabPinch;
-
         minStep = acceptableDistance / 10;
 
         NodeData[] nodeData = gameObject.GetComponentsInChildren<NodeData>();
@@ -69,10 +63,7 @@ public class NaoIK : StateListener
         if (state >= StateManager.State.calibrated)
         {
             hookedNodeChains.ForEach(ApplyFabrIK);
-            if (false && (AlwaysCheckConstraints || checkConstraints.GetStateDown(SteamVR_Input_Sources.Any)))
-                hookedNodeChains.ForEach(ApplyConstraints);
-            if (SendJoints && state == StateManager.State.armed)
-                hookedNodeChains.ForEach(SendJointAngles);
+            hookedNodeChains.ForEach(SendJointAngles);
             UpdateSegments();
         }
     }

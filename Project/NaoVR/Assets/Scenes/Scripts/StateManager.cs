@@ -14,6 +14,7 @@ public abstract class StateListener : MonoBehaviour
         stateManager.RegisterListener(this);
     }
 
+    //This method is an optional abstract method for inheriting classes to override if they want to be notified about a state change
     public virtual void StateChanged(State newState)
     {
     }
@@ -31,7 +32,8 @@ public class StateManager : MonoBehaviour
     private State state = State.init;
 
     private List<StateListener> listeners = new List<StateListener>();
-    private SteamVR_Action_Boolean calibrate,arm;
+    private SteamVR_Action_Boolean calibrate = SteamVR_Actions._default.Calibrate;
+    private SteamVR_Action_Boolean arm = SteamVR_Actions._default.ArmDisarm;
     public void RegisterListener(StateListener self)
     {
         listeners.Add(self);
@@ -46,13 +48,6 @@ public class StateManager : MonoBehaviour
     public State GetState()
     {
         return state;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        calibrate = SteamVR_Actions._default.Calibrate;
-        arm = SteamVR_Actions._default.Arm;
     }
 
     // Update is called once per frame

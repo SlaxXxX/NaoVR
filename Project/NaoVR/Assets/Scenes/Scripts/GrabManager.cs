@@ -9,13 +9,11 @@ public class GrabManager : StateListener
     public GameObject leftHand, rightHand;
     private JointStateWriter leftWriter, rightWriter;
 
-    private SteamVR_Action_Single grabStuff;
+    private SteamVR_Action_Single grabStuff = SteamVR_Actions._default.CloseHand;
 
     void Start()
     {
         Register();
-
-        grabStuff = SteamVR_Actions._default.Squeeze;
 
         leftWriter = leftHand.GetComponent<JointStateWriter>();
         if (leftWriter == null)
