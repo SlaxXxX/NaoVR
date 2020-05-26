@@ -31,8 +31,8 @@ public class GrabManager : StateListener
         if (state == StateManager.State.armed)
         {
             //57° is a closed hand
-            leftWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.LeftHand) * 57);
-            rightWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.RightHand) * 57);
+            leftWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.LeftHand) * 57 * Mathf.Deg2Rad);
+            rightWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.RightHand) * 57 * Mathf.Deg2Rad);
         }
     }
 }
