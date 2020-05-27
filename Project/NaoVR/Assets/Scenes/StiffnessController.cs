@@ -8,7 +8,7 @@ namespace NaoApi.Stiffness
     {
         private RosSocket socket;
         public bool stiffness;
-        //private Speech.SpeechControler speech;
+        public Speech.SpeechControler speech;
 
         void Start()
         {
@@ -24,7 +24,7 @@ namespace NaoApi.Stiffness
                 {
                     disableStiffness();
                 }
-                if (!stiffness)
+                else
                 {
                     enableStiffness();
                 }
@@ -39,21 +39,21 @@ namespace NaoApi.Stiffness
         private static void ServiceCallHandler(wakeupResponse message){}
 
         public void enableStiffness() {
-            socket.CallService<enableStiffnessRequest, enableStiffnessResponse>("/nao_robot/pose/body_stiffness/enable", ServiceCallHandler, new enableStiffnessRequest());
+            socket.CallService<enableStiffnessRequest, enableStiffnessResponse>("/body_stiffness/enable", ServiceCallHandler, new enableStiffnessRequest());
             stiffness = true;
-            //speech.say("stiffnes Enabled");
+            speech.say("stiffnes Enabled");
         }
         public void disableStiffness()
         {
-            socket.CallService<disableStiffnessRequest, disableStiffnessResponse>("/nao_robot/pose/body_stiffness/disable", ServiceCallHandler, new disableStiffnessRequest());
+            socket.CallService<disableStiffnessRequest, disableStiffnessResponse>("/body_stiffness/disable", ServiceCallHandler, new disableStiffnessRequest());
             stiffness = false;
-            //speech.say("stiffnes disabled");
+            speech.say("stiffnes disabled");
         }
         public void wakeup()
         {
-            socket.CallService<wakeupRequest, wakeupResponse>("/nao_robot/pose/wakeup", ServiceCallHandler, new wakeupRequest());
+            socket.CallService<wakeupRequest, wakeupResponse>("/wakeup", ServiceCallHandler, new wakeupRequest());
             stiffness = true;
-            //speech.say("stiffnes Enabled");
+            speech.say("wakeup");
         }
     }
 }

@@ -41,7 +41,9 @@ namespace RosSharp.RosBridgeClient
 
         protected virtual void Start()
         {
-            rosSocket = GetComponent<RosConnector>().RosSocket;
+            GameObject Connector = GameObject.FindWithTag("Connector");
+            rosSocket = Connector.GetComponent<RosConnector>()?.RosSocket;
+            //rosSocket = GetComponent<RosConnector>().RosSocket;
 
             CancelPublicationId = rosSocket.Advertise<Messages.Actionlib.GoalID>(ActionName + "/cancel");
             GoalPublicationId = rosSocket.Advertise<Tgoal>(ActionName + "/goal");
