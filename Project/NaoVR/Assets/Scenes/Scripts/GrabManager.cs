@@ -4,19 +4,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using Valve.VR;
 
-public class GrabManager : CalibrationListener
+public class GrabManager : StateListener
 {
-    private bool isActive = false;
     public GameObject leftHand, rightHand;
     private JointStateWriter leftWriter, rightWriter;
 
-    private SteamVR_Action_Single grabStuff;
+    private SteamVR_Action_Single grabStuff = SteamVR_Actions._default.CloseHand;
 
     void Start()
     {
         Register();
-
-        grabStuff = SteamVR_Actions._default.Squeeze;
 
         leftWriter = leftHand.GetComponent<JointStateWriter>();
         if (leftWriter == null)
@@ -29,20 +26,11 @@ public class GrabManager : CalibrationListener
 
     void Update()
     {
-        if (isActive)
+        if (state == StateManager.State.armed)
         {
             //57° is a closed hand
-            leftWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.LeftHand) * 57);
-            rightWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.RightHand) * 57);
+            leftWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.LeftHand) * 57 * Mathf.Deg2Rad);
+            rightWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.RightHand) * 57 * Mathf.Deg2Rad);
         }
-    }
-
-    public override void Calibrated()
-    {
-        isActive = true;
-    }
-
-    public override void SetArmed(bool isArmed)
-    {
     }
 }

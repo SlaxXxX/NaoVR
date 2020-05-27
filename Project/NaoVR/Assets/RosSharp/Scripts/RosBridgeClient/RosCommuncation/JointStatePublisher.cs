@@ -19,11 +19,12 @@ namespace RosSharp.RosBridgeClient
 {
     public class JointStatePublisher : Publisher<Messages.DennisMessage>
     {
+        public bool DoPublish = false;
         public List<JointStateReader> JointStateReaders;
         public string FrameId = "Unity";
 
-        private Messages.DennisMessage message;    
-        
+        private Messages.DennisMessage message;
+
         protected override void Start()
         {
             base.Start();
@@ -53,7 +54,8 @@ namespace RosSharp.RosBridgeClient
             for (int i = 0; i < JointStateReaders.Count; i++)
                 UpdateJointState(i);
 
-            Publish(message);
+            if (DoPublish)
+                Publish(message);
         }
 
         private void UpdateJointState(int i)
