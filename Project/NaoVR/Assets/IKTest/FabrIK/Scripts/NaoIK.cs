@@ -70,7 +70,7 @@ public class NaoIK : StateListener
 
     private void OnApplicationQuit()
     {
-        stiffnessController.disableStiffness();
+        //stiffnessController.disableStiffness();
     }
 
     void ApplyFabrIK(List<GameObject> nodes)

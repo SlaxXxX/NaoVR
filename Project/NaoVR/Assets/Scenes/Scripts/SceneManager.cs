@@ -8,7 +8,7 @@ using Valve.VR;
 public class SceneManager : StateListener
 {
     public Text InfoText, StatusText;
-    public GameObject InfoCanvas, FloorMarker, LeftGripMarker, RightGripMarker, LeftHandMarker, RightHandMarker, ArmedContainer, Nao;
+    public GameObject InfoCanvas, FloorMarker, LeftGripMarker, RightGripMarker, LeftHandMarker, RightHandMarker, LeftDisplay, RightDisplay, NaoMirror, Nao;
     public SteamVR_RenderModel LeftModel, RightModel;
     public JointStatePublisher publisher;
     void Start()
@@ -31,7 +31,7 @@ public class SceneManager : StateListener
                 StatusText.text = "Calibrated";
                 StatusText.color = Color.green;
 
-                Nao.SetActive(true);
+                ChangeLayerRecursive(Nao, 0);
                 LeftModel.SetMeshRendererState(false);
                 RightModel.SetMeshRendererState(false);
 
@@ -57,7 +57,9 @@ public class SceneManager : StateListener
                 StatusText.color = Color.red;
                 publisher.DoPublish = true;
 
-                ArmedContainer.SetActive(true);
+                ChangeLayerRecursive(NaoMirror, 0);
+                LeftDisplay.SetActive(true);
+                RightDisplay.SetActive(true);
                 LeftGripMarker.SetActive(false);
                 RightHandMarker.SetActive(false);
                 LeftHandMarker.SetActive(false);
