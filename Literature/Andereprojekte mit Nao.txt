@@ -1,0 +1,1 @@
+https://github.com/Avnerus/nao_kinect/blob/master/scripts/nao_kinect.py
