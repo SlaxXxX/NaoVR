@@ -46,7 +46,6 @@ public class SceneManager : StateListener
                 StatusText.color = new Color(1, 0.5f, 0.2f);
                 publisher.DoPublish = false;
 
-                ArmedContainer.SetActive(false);
                 RightGripMarker.SetActive(false);
                 LeftGripMarker.SetActive(true);
                 RightHandMarker.SetActive(true);

@@ -20,9 +20,9 @@ public abstract class StateListener : MonoBehaviour
     }
 }
 
-public interface Predicate
+public abstract class Predicate : MonoBehaviour
 {
-    bool CriteriaMet();
+    public abstract bool CriteriaMet();
 }
 
 public class StateManager : MonoBehaviour

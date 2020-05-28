@@ -2,13 +2,13 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DistanceCheckpoint : MonoBehaviour, Predicate
+public class DistanceCheckpoint : Predicate
 {
     public GameObject Target;
     public Vector3 CheckAxis = new Vector3(1, 1, 1);
     public float distance = 0.4f;
 
-    public bool CriteriaMet()
+    public override bool CriteriaMet()
     {
         Vector3 pos1 = RemoveAxis(gameObject.transform.position);
         Vector3 pos2 = RemoveAxis(Target.transform.position);

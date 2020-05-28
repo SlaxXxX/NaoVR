@@ -20,9 +20,10 @@ public class NavigationManager : StateListener
         actionDownMap = new Dictionary<SteamVR_Action_Boolean, Action>()
         {
             { SteamVR_Actions._default.WalkForward, walkerController.walkAhead },
+            { SteamVR_Actions._default.WalkBackward, Stand },
             { SteamVR_Actions._default.TurnLeft, walkerController.turnLeft },
             { SteamVR_Actions._default.TurnRight, walkerController.turnRight },
-            { SteamVR_Actions._default.CrouchStand, CrouchStand }
+            { SteamVR_Actions._default.CrouchStand, Crouch }
         };
         actionUpMap = new Dictionary<SteamVR_Action_Boolean, Action>()
         {
@@ -37,7 +38,7 @@ public class NavigationManager : StateListener
 
     void Update()
     {
-        if (state == StateManager.State.armed)
+        if (state == StateManager.State.disarmed)
         {
             foreach (KeyValuePair<SteamVR_Action_Boolean, Action> pair in actionDownMap)
             {
@@ -52,11 +53,19 @@ public class NavigationManager : StateListener
         }
     }
 
-    public void CrouchStand()
+    public void Crouch()
     {
-        if (isStanding)
-            poseController.runPose("Crounch");
-        else
-            poseController.runPose("StandZero");
+        poseController.runPose("Crouch");
+    }
+
+    public void Stand()
+    {
+        poseController.runPose("StandZero");
+    }
+
+    public void StopMoving()
+    {
+        walkerController.stopWalking();
+        Stand();
     }
 }
