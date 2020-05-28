@@ -1,4 +1,7 @@
-﻿using System;
+﻿using NaoApi.Behavior;
+using NaoApi.Pose;
+using NaoApi.Walker;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -6,19 +9,28 @@ using Valve.VR;
 
 public class NavigationManager : StateListener
 {
-    private Dictionary<SteamVR_Action_Boolean, Action> actionMap;
+    private Dictionary<SteamVR_Action_Boolean, Action> actionDownMap;
+    private Dictionary<SteamVR_Action_Boolean, Action> actionUpMap;
+    public PoseController poseController;
+    public WalkerController walkerController;
     private bool isStanding = true;
 
     void Start()
     {
-        actionMap = new Dictionary<SteamVR_Action_Boolean, Action>()
+        actionDownMap = new Dictionary<SteamVR_Action_Boolean, Action>()
         {
-            { SteamVR_Actions._default.WalkForward, TestMethod },
-            { SteamVR_Actions._default.WalkBackward, TestMethod },
-            { SteamVR_Actions._default.TurnLeft, TestMethod },
-            { SteamVR_Actions._default.TurnRight, TestMethod },
-            { SteamVR_Actions._default.CrouchStand, TestMethod },
+            { SteamVR_Actions._default.WalkForward, walkerController.walkAhead },
+            { SteamVR_Actions._default.TurnLeft, walkerController.turnLeft },
+            { SteamVR_Actions._default.TurnRight, walkerController.turnRight },
+            { SteamVR_Actions._default.CrouchStand, CrouchStand }
         };
+        actionUpMap = new Dictionary<SteamVR_Action_Boolean, Action>()
+        {
+            { SteamVR_Actions._default.WalkForward, walkerController.stopWalking },
+            { SteamVR_Actions._default.TurnLeft, walkerController.stopWalking },
+            { SteamVR_Actions._default.TurnRight, walkerController.stopWalking }
+        };
+
         Register();
     }
 
@@ -27,16 +39,24 @@ public class NavigationManager : StateListener
     {
         if (state == StateManager.State.armed)
         {
-            foreach(KeyValuePair<SteamVR_Action_Boolean, Action> pair in actionMap)
+            foreach (KeyValuePair<SteamVR_Action_Boolean, Action> pair in actionDownMap)
             {
                 if (pair.Key.GetStateDown(SteamVR_Input_Sources.Any))
+                    pair.Value.Invoke();
+            }
+            foreach (KeyValuePair<SteamVR_Action_Boolean, Action> pair in actionUpMap)
+            {
+                if (pair.Key.GetStateUp(SteamVR_Input_Sources.Any))
                     pair.Value.Invoke();
             }
         }
     }
 
-    public void TestMethod()
+    public void CrouchStand()
     {
-
+        if (isStanding)
+            poseController.runPose("Crounch");
+        else
+            poseController.runPose("StandZero");
     }
 }

@@ -41,7 +41,7 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Single CloseHand
+        public virtual SteamVR_Action_Boolean CloseHand
         {
             get
             {

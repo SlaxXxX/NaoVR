@@ -90,8 +90,6 @@ namespace NaoApi.Walker
         }
         public void stopWalking()
         {
-            stiffnessController.wakeup();
-            /*
             msgs.Geometry.Vector3 linear = new msgs.Geometry.Vector3();
             msgs.Geometry.Vector3 angular = new msgs.Geometry.Vector3();
             msgs.Geometry.Twist message = new msgs.Geometry.Twist();
@@ -103,7 +101,7 @@ namespace NaoApi.Walker
             angular.z = 0.0f;
             message.linear = linear;
             message.angular = angular;
-            socket.Publish(publication_id, message);*/
+            socket.Publish(publication_id, message);
         }
     }
 }

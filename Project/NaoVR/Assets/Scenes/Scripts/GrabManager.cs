@@ -1,4 +1,5 @@
-﻿using RosSharp.RosBridgeClient;
+﻿using NaoApi.Behavior;
+using RosSharp.RosBridgeClient;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -8,8 +9,9 @@ public class GrabManager : StateListener
 {
     public GameObject leftHand, rightHand;
     private JointStateWriter leftWriter, rightWriter;
+    public BehaviorController behaviorController;
 
-    private SteamVR_Action_Single grabStuff = SteamVR_Actions._default.CloseHand;
+    private SteamVR_Action_Boolean grabStuff = SteamVR_Actions._default.CloseHand;
 
     void Start()
     {
@@ -28,9 +30,25 @@ public class GrabManager : StateListener
     {
         if (state == StateManager.State.armed)
         {
-            //57° is a closed hand
-            leftWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.LeftHand) * 57 * Mathf.Deg2Rad);
-            rightWriter?.Write(grabStuff.GetAxis(SteamVR_Input_Sources.RightHand) * 57 * Mathf.Deg2Rad);
+            if (grabStuff.GetStateDown(SteamVR_Input_Sources.RightHand))
+            {
+                behaviorController.runBehavior("handcontroller-dc72e7/closeRightHand");
+            }
+
+            if (grabStuff.GetStateUp(SteamVR_Input_Sources.RightHand))
+            {
+                behaviorController.runBehavior("handcontroller-dc72e7/openRightHand");
+            }
+
+            if (grabStuff.GetStateDown(SteamVR_Input_Sources.LeftHand))
+            {
+                behaviorController.runBehavior("handcontroller-dc72e7/closeleftHand");
+            }
+
+            if (grabStuff.GetStateUp(SteamVR_Input_Sources.LeftHand))
+            {
+                behaviorController.runBehavior("handcontroller-dc72e7/openLeftHand");
+            }
         }
     }
 }

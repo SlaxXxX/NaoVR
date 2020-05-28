@@ -16,7 +16,7 @@
     },
     {
       "name": "/actions/default/in/CloseHand",
-      "type": "vector1",
+      "type": "boolean",
       "requirement": "optional"
     },
     {
