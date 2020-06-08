@@ -37,10 +37,6 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/WalkBackward",
-      "type": "boolean"
-    },
-    {
       "name": "/actions/default/in/TurnLeft",
       "type": "boolean"
     },
@@ -49,7 +45,11 @@
       "type": "boolean"
     },
     {
-      "name": "/actions/default/in/CrouchStand",
+      "name": "/actions/default/in/Crouch",
+      "type": "boolean"
+    },
+    {
+      "name": "/actions/default/in/Stand",
       "type": "boolean"
     },
     {
@@ -180,11 +180,11 @@
       "/actions/default/in/CloseHand": "Close Hand",
       "/actions/default/in/ArmDisarm": "Arm / Disarm",
       "/actions/default/in/WalkForward": "Walk Forward",
-      "/actions/default/in/WalkBackward": "Walk Backwards",
-      "/actions/default/in/CrouchStand": "Crouch / Stand Up",
       "/actions/default/in/TurnLeft": "Turn Left",
       "/actions/default/in/TurnRight": "Turn Right",
-      "/actions/default/in/Calibrate": "Calibrate"
+      "/actions/default/in/Calibrate": "Calibrate",
+      "/actions/default/in/Crouch": "Crouch",
+      "/actions/default/in/Stand": "Stand"
     }
   ]
 }

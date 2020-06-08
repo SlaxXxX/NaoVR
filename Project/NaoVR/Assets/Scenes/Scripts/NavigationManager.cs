@@ -20,10 +20,10 @@ public class NavigationManager : StateListener
         actionDownMap = new Dictionary<SteamVR_Action_Boolean, Action>()
         {
             { SteamVR_Actions._default.WalkForward, walkerController.walkAhead },
-            { SteamVR_Actions._default.WalkBackward, Stand },
             { SteamVR_Actions._default.TurnLeft, walkerController.turnLeft },
             { SteamVR_Actions._default.TurnRight, walkerController.turnRight },
-            { SteamVR_Actions._default.CrouchStand, Crouch }
+            { SteamVR_Actions._default.Crouch, Crouch },
+            { SteamVR_Actions._default.Stand, Stand }
         };
         actionUpMap = new Dictionary<SteamVR_Action_Boolean, Action>()
         {

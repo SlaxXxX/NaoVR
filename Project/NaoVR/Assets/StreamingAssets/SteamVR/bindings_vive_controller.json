@@ -4,10 +4,6 @@
    "app_key" : "application.generated.unity.naovr.exe",
    "bindings" : {
       "/actions/buggy" : {
-         "chords" : [],
-         "haptics" : [],
-         "poses" : [],
-         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -134,8 +130,26 @@
             },
             {
                "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/closehand"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "pull" : {
+                     "output" : "/actions/default/in/closehand"
+                  }
+               },
+               "mode" : "trigger",
+               "path" : "/user/hand/right/input/trigger"
+            },
+            {
+               "inputs" : {
                   "center" : {
-                     "output" : "/actions/default/in/crouchstand"
+                     "output" : "/actions/default/in/stand"
                   },
                   "east" : {
                      "output" : "/actions/default/in/turnright"
@@ -144,7 +158,7 @@
                      "output" : "/actions/default/in/walkforward"
                   },
                   "south" : {
-                     "output" : "/actions/default/in/walkbackward"
+                     "output" : "/actions/default/in/crouch"
                   },
                   "west" : {
                      "output" : "/actions/default/in/turnleft"
@@ -157,30 +171,16 @@
                "path" : "/user/hand/left/input/trackpad"
             },
             {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/closehand"
-                  }
+               "inputs" : {},
+               "mode" : "dpad",
+               "parameters" : {
+                  "sub_mode" : "click"
                },
-               "mode" : "button",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "click" : {
-                     "output" : "/actions/default/in/closehand"
-                  }
-               },
-               "mode" : "button",
-               "path" : "/user/hand/right/input/trigger"
+               "path" : "/user/hand/right/input/trackpad"
             }
          ]
       },
       "/actions/naovr" : {
-         "chords" : [],
-         "haptics" : [],
-         "poses" : [],
-         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -221,10 +221,6 @@
          ]
       },
       "/actions/platformer" : {
-         "chords" : [],
-         "haptics" : [],
-         "poses" : [],
-         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -268,7 +264,7 @@
    "category" : "steamvr_input",
    "controller_type" : "vive_controller",
    "description" : "",
-   "name" : "Meine NaoVR [Testing] Konfiguration für Vive Controller",
+   "name" : "Saved NaoVR [Testing] configuration for Vive Controller",
    "options" : {},
    "simulated_actions" : []
 }

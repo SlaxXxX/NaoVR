@@ -8,7 +8,7 @@ using Valve.VR;
 public class SceneManager : StateListener
 {
     public Text InfoText, StatusText;
-    public GameObject InfoCanvas, FloorMarker, LeftGripMarker, RightGripMarker, LeftHandMarker, RightHandMarker, LeftDisplay, RightDisplay, NaoMirror, Nao;
+    public GameObject InfoCanvas, ImageCanvas, FloorMarker, LeftGripMarker, RightGripMarker, LeftHandMarker, RightHandMarker, LeftDisplay, RightDisplay, NaoMirror, Nao;
     public SteamVR_RenderModel LeftModel, RightModel;
     public JointStatePublisher publisher;
     void Start()
@@ -27,7 +27,7 @@ public class SceneManager : StateListener
                 RightGripMarker.SetActive(true);
                 break;
             case StateManager.State.calibrated:
-                InfoText.text = "Place your hands inside the marked areas and press your left grip button to begin synchronization.";
+                InfoText.text = "Place your hands inside the marked areas and press your left grip button to Arm / Disarm. When disarmed, move the Nao with the left Touchpad as shown above.";
                 StatusText.text = "Calibrated";
                 StatusText.color = Color.green;
 
@@ -35,8 +35,9 @@ public class SceneManager : StateListener
                 LeftModel.SetMeshRendererState(false);
                 RightModel.SetMeshRendererState(false);
 
+                ImageCanvas.SetActive(true);
                 RightGripMarker.SetActive(false);
-                LeftGripMarker.SetActive(true);
+                //LeftGripMarker.SetActive(true);
                 RightHandMarker.SetActive(true);
                 LeftHandMarker.SetActive(true);
                 FloorMarker.SetActive(false);
@@ -47,7 +48,7 @@ public class SceneManager : StateListener
                 publisher.DoPublish = false;
 
                 RightGripMarker.SetActive(false);
-                LeftGripMarker.SetActive(true);
+                //LeftGripMarker.SetActive(true);
                 RightHandMarker.SetActive(true);
                 LeftHandMarker.SetActive(true);
                 break;
@@ -57,6 +58,7 @@ public class SceneManager : StateListener
                 StatusText.color = Color.red;
                 publisher.DoPublish = true;
 
+                ImageCanvas.SetActive(false);
                 ChangeLayerRecursive(NaoMirror, 0);
                 LeftDisplay.SetActive(true);
                 RightDisplay.SetActive(true);

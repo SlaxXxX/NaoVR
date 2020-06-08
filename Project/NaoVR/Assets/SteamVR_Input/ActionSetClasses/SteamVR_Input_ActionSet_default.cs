@@ -81,14 +81,6 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean WalkBackward
-        {
-            get
-            {
-                return SteamVR_Actions.default_WalkBackward;
-            }
-        }
-        
         public virtual SteamVR_Action_Boolean TurnLeft
         {
             get
@@ -105,11 +97,19 @@ namespace Valve.VR
             }
         }
         
-        public virtual SteamVR_Action_Boolean CrouchStand
+        public virtual SteamVR_Action_Boolean Crouch
         {
             get
             {
-                return SteamVR_Actions.default_CrouchStand;
+                return SteamVR_Actions.default_Crouch;
+            }
+        }
+        
+        public virtual SteamVR_Action_Boolean Stand
+        {
+            get
+            {
+                return SteamVR_Actions.default_Stand;
             }
         }
         
