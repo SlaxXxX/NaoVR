@@ -13,7 +13,6 @@ public class NodeData : MonoBehaviour
     public float pitchOffset = 0, rollOffset = 0;
     public float pitchScale = 1, rollScale = 1;
 
-    public Vector2 XBounds, YBounds, ZBounds;
     private float distance;
 
     public float GetDistance()

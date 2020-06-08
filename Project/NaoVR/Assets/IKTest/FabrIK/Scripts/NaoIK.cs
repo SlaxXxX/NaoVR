@@ -10,8 +10,7 @@ using Valve.VR;
 public class NaoIK : StateListener
 {
     public GameObject SegmentPrefab;
-    public bool AlwaysCheckConstraints = false, SendJoints = false, RenderDebug = false;
-    public StiffnessController stiffnessController;
+    public bool SendJoints = false, RenderDebug = false;
 
     private GameObject[] nodeInstances, segmentInstances;
     private List<List<GameObject>> hookedNodeChains = new List<List<GameObject>>();
@@ -68,11 +67,6 @@ public class NaoIK : StateListener
         }
     }
 
-    private void OnApplicationQuit()
-    {
-        //stiffnessController.disableStiffness();
-    }
-
     void ApplyFabrIK(List<GameObject> nodes)
     {
         GameObject effector = nodes[0];
@@ -111,7 +105,6 @@ public class NaoIK : StateListener
             float distance = delta == 1 ? nodes[i - 1].GetComponent<NodeData>().GetDistance() : nodes[i].GetComponent<NodeData>().GetDistance();
             Vector3 last = nodes[i - delta].transform.position;
             nodes[i].transform.position = last + (nodes[i].transform.position - last).normalized * distance;
-            //ApplyConstraints(nodes[i], nodes[i - delta]);
         }
     }
 
@@ -165,94 +158,6 @@ public class NaoIK : StateListener
         {
             nodes[i].GetComponent<NodeData>().WriteJointData(i > 0 ? nodes[i - 1] : null);
         }
-    }
-
-    void ApplyConstraints(List<GameObject> nodes)
-    {
-        for (int i = nodes.Count - 1; i >= 0; i--)
-        {
-            //if the node has a child
-            if (i > 0)
-            {
-                NodeData nodeData = nodes[i].GetComponent<NodeData>();
-
-                Vector3 parentForward = i < nodes.Count - 1 ? nodes[i + 1].transform.TransformDirection(Vector3.forward) : Vector3.right;
-                Vector3 parentUp = i < nodes.Count - 1 ? nodes[i + 1].transform.TransformDirection(Vector3.up) : Vector3.up;
-                Vector3 uncheckedDirection = (nodes[i - 1].transform.position - nodes[i].transform.position).normalized;
-
-                float yRot = Vector3.SignedAngle(parentForward, uncheckedDirection, parentUp);
-                float zRot = Vector3.SignedAngle(parentUp, uncheckedDirection, parentForward);
-
-                float yCorrection = Mathf.Min(0, nodeData.YBounds.y - yRot) + Mathf.Max(0, nodeData.YBounds.x - yRot);
-                float zCorrection = Mathf.Min(0, nodeData.ZBounds.y - zRot) + Mathf.Max(0, nodeData.ZBounds.x - zRot);
-
-                nodes[i - 1].transform.RotateAround(nodes[i].transform.position, parentUp, yCorrection);
-                nodes[i - 1].transform.RotateAround(nodes[i].transform.position, parentForward, zCorrection);
-                //nodes[i - 1].transform.position = nodes[i].transform.position + (nodes[i - 1].transform.position - nodes[i].transform.position).normalized * nodeData.GetDistance();
-
-                if (i < nodes.Count - 1)
-                    nodes[i].transform.rotation = nodes[i + 1].transform.rotation;
-                else
-                    nodes[i].transform.rotation = Quaternion.Euler(Vector3.right);
-
-                nodes[i].transform.Rotate(0, 0, zRot + zCorrection, Space.Self);
-                nodes[i].transform.Rotate(0, yRot + yCorrection, 0, Space.Self);
-
-                Debug.Log($"{i} to {i - 1}: ({yRot}, {zRot}; {yCorrection}, {zCorrection})");
-
-                /* THIS SHIT AINT WORKIN
-
-                //Get x, y and z angle of the direction to compare with restrictions set in NodeData
-                float xRot = Vector3.SignedAngle(zeroAngle.RemoveX(), uncheckedDirection.RemoveX(), Vector3.right);
-                float yRot = Vector3.SignedAngle(zeroAngle.RemoveY(), uncheckedDirection.RemoveY(), Vector3.up);
-                float zRot = Vector3.SignedAngle(zeroAngle.RemoveZ(), uncheckedDirection.RemoveZ(), Vector3.forward);
-
-                //Debug.Log($"{i} to {i - 1}: ({ xRot},{ yRot},{ zRot})");
-
-                //Store the amount the child is out of the parents constraints in degrees
-                xRot = Mathf.Min(0, nodeData.XBounds.y - xRot) + Mathf.Max(0, nodeData.XBounds.x - xRot);
-                yRot = Mathf.Min(0, nodeData.YBounds.y - yRot) + Mathf.Max(0, nodeData.YBounds.x - yRot);
-                zRot = Mathf.Min(0, nodeData.ZBounds.y - zRot) + Mathf.Max(0, nodeData.ZBounds.x - zRot);
-
-                //Move child to obey constraints
-                nodes[i - 1].transform.RotateAround(nodes[i].transform.position, nodes[i].transform.TransformDirection(Vector3.right), xRot);
-                nodes[i - 1].transform.RotateAround(nodes[i].transform.position, nodes[i].transform.TransformDirection(Vector3.up), yRot);
-                //nodes[i - 1].transform.RotateAround(nodes[i].transform.position, nodes[i].transform.TransformDirection(Vector3.forward), zRot);
-
-                //Once the direction is consistent, rotate node to match next segment
-                nodes[i].transform.LookAt(nodes[i - 1].transform);
-
-                //if the node is not an endpoint of either side, rotate it to be inside the plane of parent and child
-                if (i < nodes.Count - 1)
-                {
-
-                }
-
-            */
-            }
-        }
-    }
-    void ApplyConstraints(GameObject current, GameObject last)
-    {
-        float xRot, yRot, zRot;
-
-        Vector3 lastDirection = last.transform.TransformDirection(Vector3.back);
-        Vector3 linkDirection = (current.transform.position - last.transform.position).normalized;
-        NodeData nodeData = last.GetComponent<NodeData>();
-
-        xRot = Vector3.Angle(lastDirection.RemoveX(), linkDirection.RemoveX());
-        yRot = Vector3.Angle(lastDirection.RemoveY(), linkDirection.RemoveY());
-        zRot = Vector3.Angle(lastDirection.RemoveZ(), linkDirection.RemoveZ());
-
-        xRot = Mathf.Min(0, nodeData.XBounds.y - xRot) + Mathf.Max(0, nodeData.XBounds.x - xRot);
-        yRot = Mathf.Min(0, nodeData.YBounds.y - yRot) + Mathf.Max(0, nodeData.YBounds.x - yRot);
-        zRot = Mathf.Min(0, nodeData.ZBounds.y - zRot) + Mathf.Max(0, nodeData.ZBounds.x - zRot);
-
-        current.transform.RotateAround(last.transform.position, last.transform.TransformDirection(Vector3.right), xRot);
-        current.transform.RotateAround(last.transform.position, last.transform.TransformDirection(Vector3.up), yRot);
-        current.transform.RotateAround(last.transform.position, last.transform.TransformDirection(Vector3.forward), zRot);
-
-        current.transform.LookAt(last.transform);
     }
 
     void UpdateSegments()
