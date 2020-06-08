@@ -19,8 +19,6 @@ Dennis Jahnke (https://github.com/dj12345678901)
 #### Optional:
  - 2 Webcams to livestream Nao Vision
  
-#### An Image of our Linux VM is not public at the moment.
- 
 If you're working on a similar or follow-up project, do not hesitate to open an issue for questions or errors.
 
 ## NOTE
