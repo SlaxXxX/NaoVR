@@ -3,6 +3,7 @@ This project synchronizes an HTC Vive with an Aldebaran NAO to create a motion-c
 
 ### Creators:
 Janis Schneider (https://github.com/SlaxXxX)
+
 Dennis Jahnke (https://github.com/dj12345678901)
 
 ## Technologies used:
@@ -21,3 +22,7 @@ Dennis Jahnke (https://github.com/dj12345678901)
 #### An Image of our Linux VM is not public at the moment.
  
 If you're working on a similar or follow-up project, do not hesitate to open an issue for questions or errors.
+
+## NOTE
+The main branch 'cleanup' was created to reorganize the project structure into a more intuitive layout and to clean up dead code.
+However this branch was never tested, so if any errors occur, check out the master branch and see if this solves your problem.
