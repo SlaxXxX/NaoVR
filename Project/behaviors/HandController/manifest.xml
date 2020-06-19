@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<package version="1.0.0" uuid="handcontroller-225615">
+ <names>
+  <name lang="en_US">HandController</name>
+ </names>
+ <descriptions>
+  <description lang="en_US">add Behavior that open/close hands</description>
+ </descriptions>
+ <descriptionLanguages>
+  <language>en_US</language>
+ </descriptionLanguages>
+ <contents>
+  <behaviorContent path="closeLeftHand">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="openLeftHand">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="openRightHand">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="closeRightHand">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="openBothHands">
+   <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+ </contents>
+ <requirements>
+  <robotRequirement model="NAO"/>
+ </requirements>
+</package>
