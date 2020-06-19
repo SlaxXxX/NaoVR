@@ -28,7 +28,7 @@ namespace NaoApi.Behavior
 
             if (Input.GetKeyDown(KeyCode.Y))
             {
-                runBehavior("handcontroller-dc72e7/closeleftHand");
+                runBehavior("handcontroller-dc72e7/closeLeftHand");
             }
 
             if (Input.GetKeyUp(KeyCode.Y))

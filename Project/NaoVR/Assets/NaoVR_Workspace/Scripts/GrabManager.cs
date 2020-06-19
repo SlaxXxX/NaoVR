@@ -32,21 +32,25 @@ public class GrabManager : StateListener
         {
             if (grabStuff.GetStateDown(SteamVR_Input_Sources.RightHand))
             {
+                Debug.Log("closeRightHand");
                 behaviorController.runBehavior("handcontroller-dc72e7/closeRightHand");
             }
 
             if (grabStuff.GetStateUp(SteamVR_Input_Sources.RightHand))
             {
+                Debug.Log("openRightHand");
                 behaviorController.runBehavior("handcontroller-dc72e7/openRightHand");
             }
 
             if (grabStuff.GetStateDown(SteamVR_Input_Sources.LeftHand))
             {
-                behaviorController.runBehavior("handcontroller-dc72e7/closeleftHand");
+                Debug.Log("closeLeftHand");
+                behaviorController.runBehavior("handcontroller-dc72e7/closeLeftHand");
             }
 
             if (grabStuff.GetStateUp(SteamVR_Input_Sources.LeftHand))
             {
+                Debug.Log("openLeftHand");
                 behaviorController.runBehavior("handcontroller-dc72e7/openLeftHand");
             }
         }

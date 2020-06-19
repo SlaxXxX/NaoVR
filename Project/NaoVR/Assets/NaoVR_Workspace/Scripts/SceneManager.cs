@@ -59,7 +59,7 @@ public class SceneManager : StateListener
                 publisher.DoPublish = true;
 
                 ImageCanvas.SetActive(false);
-                ChangeLayerRecursive(NaoMirror, 0);
+                //ChangeLayerRecursive(NaoMirror, 0);
                 LeftDisplay.SetActive(true);
                 RightDisplay.SetActive(true);
                 LeftGripMarker.SetActive(false);

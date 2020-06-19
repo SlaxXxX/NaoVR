@@ -4,6 +4,10 @@
    "app_key" : "application.generated.unity.naovr.exe",
    "bindings" : {
       "/actions/buggy" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -130,24 +134,6 @@
             },
             {
                "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/default/in/closehand"
-                  }
-               },
-               "mode" : "trigger",
-               "path" : "/user/hand/left/input/trigger"
-            },
-            {
-               "inputs" : {
-                  "pull" : {
-                     "output" : "/actions/default/in/closehand"
-                  }
-               },
-               "mode" : "trigger",
-               "path" : "/user/hand/right/input/trigger"
-            },
-            {
-               "inputs" : {
                   "center" : {
                      "output" : "/actions/default/in/stand"
                   },
@@ -171,16 +157,30 @@
                "path" : "/user/hand/left/input/trackpad"
             },
             {
-               "inputs" : {},
-               "mode" : "dpad",
-               "parameters" : {
-                  "sub_mode" : "click"
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/closehand"
+                  }
                },
-               "path" : "/user/hand/right/input/trackpad"
+               "mode" : "button",
+               "path" : "/user/hand/left/input/trigger"
+            },
+            {
+               "inputs" : {
+                  "click" : {
+                     "output" : "/actions/default/in/closehand"
+                  }
+               },
+               "mode" : "button",
+               "path" : "/user/hand/right/input/trigger"
             }
          ]
       },
       "/actions/naovr" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
@@ -221,6 +221,10 @@
          ]
       },
       "/actions/platformer" : {
+         "chords" : [],
+         "haptics" : [],
+         "poses" : [],
+         "skeleton" : [],
          "sources" : [
             {
                "inputs" : {
