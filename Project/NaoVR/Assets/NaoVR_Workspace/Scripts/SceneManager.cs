@@ -1,4 +1,5 @@
-﻿using RosSharp.RosBridgeClient;
+﻿using NaoApi.Behavior;
+using RosSharp.RosBridgeClient;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -11,6 +12,7 @@ public class SceneManager : StateListener
     public GameObject InfoCanvas, ImageCanvas, FloorMarker, LeftGripMarker, RightGripMarker, LeftHandMarker, RightHandMarker, LeftDisplay, RightDisplay, NaoMirror, Nao;
     public SteamVR_RenderModel LeftModel, RightModel;
     public JointStatePublisher publisher;
+    public BehaviorController behaviorController;
     void Start()
     {
         Register();
@@ -57,6 +59,7 @@ public class SceneManager : StateListener
                 StatusText.text = "Armed";
                 StatusText.color = Color.red;
                 publisher.DoPublish = true;
+                behaviorController.runBehavior("handcontroller-dc72e7/openBothHands");
 
                 ImageCanvas.SetActive(false);
                 //ChangeLayerRecursive(NaoMirror, 0);
