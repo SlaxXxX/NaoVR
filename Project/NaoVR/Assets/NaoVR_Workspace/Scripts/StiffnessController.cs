@@ -14,7 +14,6 @@ namespace NaoApi.Stiffness
         {
             GameObject Connector = GameObject.FindWithTag("Connector");
             socket = Connector.GetComponent<RosConnector>()?.RosSocket;
-            disableStiffness();
         }
         void Update()
         {//just for debugging remove later
