@@ -23,4 +23,4 @@ If you're working on a similar or follow-up project, do not hesitate to open an 
 
 ## NOTE
 The main branch 'cleanup' was created to reorganize the project structure into a more intuitive layout and to clean up dead code.
-However this branch was never tested, so if any errors occur, check out the master branch and see if this solves your problem.
+However this branch is not fully tested, so if any errors occur, check out the master branch and see if this solves your problem. Note that a few features were altered/added in the cleanup branch.
